@@ -13,7 +13,7 @@ class CoffeeScraper {
 	roast(callback) {
 		var scraper = this;
 		var coffeeURL = scraper.scraperURL;
-		scraper.getHTMLForURL(function(htmlResult) {
+		scraper.getHTMLForCORSProxyURL(function(htmlResult) {
 			var scrapedResult = scraper.scrapeHTMLForCoffeeObjects(htmlResult);
 			callback(scrapedResult);
 		});
@@ -30,6 +30,21 @@ class CoffeeScraper {
 			},
 			success: function (data) {
 				ajaxCallback(data);
+			},
+			error: function (data) {
+				ajaxCallback(null);
+			}
+		});
+	}
+
+	getHTMLForCORSProxyURL(htmlCallback) {
+		var jsonURL = this.scraperURL;
+		var ajaxCallback = htmlCallback;
+		$.ajax({
+			dataType: "json",
+			url: jsonURL,
+			success: function (data) {
+				ajaxCallback(data["body"]);
 			},
 			error: function (data) {
 				ajaxCallback(null);
