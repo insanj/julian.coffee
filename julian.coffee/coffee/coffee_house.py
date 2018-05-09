@@ -4,12 +4,14 @@ from coffee_barista import *
 
 class CoffeeHouse:
 	webBrowser = None
+	safePath = None
 
-	def __init__(self, browserPath):
+	def __init__(self, browserPath, safePath):
 		self.webBrowser = CoffeeBarista(browserPath)
+		self.safePath = safePath
 
 	def auth(self):
-		loginAuth = CoffeeSafe()
+		loginAuth = CoffeeSafe(self.safePath)
 		loginAuthSite = loginAuth.authWebpage()
 		loginAuthDict = loginAuth.authDict()
 		loginAuthSubmit = loginAuth.submitClass()
