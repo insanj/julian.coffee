@@ -1,12 +1,23 @@
 #!/usr/bin/python
-from onepassword import Keychain
+import os
+import csv
 
 class CoffeeSafe():
 	def authWebpage(self):
-		return ""
+		return "https://venmo.com/account/sign-in/"
+
+	def venmoConfigFileContents(self):
+		filePath = "venmo.csv"
+		configContents = []
+		with open(filePath, 'rb') as csvfile:
+			csvreader = csv.reader(csvfile, delimiter=',')
+			for csvelement in csvreader:
+				configContents.append(csvelement)
+			return configContents
 
 	def authDict(self):
-		return {"" : ""}
+		config = self.venmoConfigFileContents()
+		return {"username" : config[0], "password" : config[1]}
 
-	def submitSelector(self):
-		return ""
+	def submitClass(self):
+		return "auth-button"

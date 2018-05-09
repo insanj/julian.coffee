@@ -1,7 +1,7 @@
 # see https://github.com/Olical/Spark/blob/master/makefile
 # rsync
 FLASK_APP=coffee_flask.py
-SRC_DIR=coffee/
+SRC_DIR=julian.coffee
 
 windows:
 	cd $(SRC_DIR) && set FLASK_APP=$(FLASK_APP) && flask run
@@ -12,7 +12,6 @@ curl:
 	open "localhost:8888"
 
 deps:
-	pip install 1pass
 	pip install flask
 	pip install selenium
 

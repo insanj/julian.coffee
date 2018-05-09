@@ -3,7 +3,9 @@ from flask import Flask, jsonify, render_template, request
 from coffee import *
 
 app = Flask(__name__)
-onLaunchBrowser = CoffeeBarista()
+
+serverBrowserLocation = "coffee/external/chromedriver.exe"
+onLaunchBrowser = CoffeeBarista(serverBrowserLocation)
 onLaunchBrowser.navigateToWebpage("http://127.0.0.1:5000")
 
 @app.route("/")
@@ -12,6 +14,6 @@ def index():
 
 @app.route('/coffeeTime')
 def coffeeTime():
-	coffeeHouse = CoffeeHouse()
+	coffeeHouse = CoffeeHouse(serverBrowserLocation)
 	coffeeVenmoURL = request.args.get('url', default = '*', type = str)
 	return coffeeHouse.beginCoffeeTime(coffeeVenmoURL)

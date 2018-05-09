@@ -4,22 +4,31 @@ from selenium import webdriver
 class CoffeeBarista():
 	baristaBrowser = None
 
-	def __init__(self, baristaBrowser=webdriver.Chrome()):
-		self.baristaBrowser = baristaBrowser
+	def __init__(self, browserPath):
+		self.baristaBrowser = webdriver.Chrome(browserPath)
 
-	def navigateToWebpage(baristaURL):
+	def navigateToWebpage(self, baristaURL):
 		self.baristaBrowser.get(baristaURL)
 
-	def sendValueForKey(value, key):
-		element = self.baristaBrowser.find_element_by_class_name(key) # js-username-field
+	def sendValueForKey(self, value, key):
+		element = self.baristaBrowser.find_element_by_class_name(key)
 		element.send_keys(value)
 
-	def submitForSelector(selector):
-		element = self.baristaBrowser.find_element_by_css_selector(selector) # button.submit
+	def sendValueForName(self, value, name):
+		element = self.baristaBrowser.find_element_by_name(name)
+		element.send_keys(value)
+
+	def submitForClass(self, className):
+		element = self.baristaBrowser.find_element_by_class_name(className)
 		element.submit()
 
-	def closeWebpage():
+	def submitForSelector(self, selector):
+		element = self.baristaBrowser.find_element_by_css_selector(selector)
+		element.submit()
+
+	def closeWebpage(self):
 		self.baristaBrowser.quit()
 
-	def findAllElementsForClass(className):
-		return self.baristaBrowser.find_element_by_name(className)
+	def getWebpageHTMLBody(self, baristaURL):
+		self.baristaBrowser.get(baristaURL)
+		print self.baristaBrowser.find_element_by_xpath("/html/body").text
