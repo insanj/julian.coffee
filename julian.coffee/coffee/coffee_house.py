@@ -10,21 +10,15 @@ class CoffeeHouse:
 		self.webBrowser = CoffeeBarista(browserPath)
 		self.safePath = safePath
 
-	def auth(self):
-		loginAuth = CoffeeSafe(self.safePath)
-		loginAuthSite = loginAuth.authWebpage()
-		loginAuthDict = loginAuth.authDict()
-		loginAuthSubmit = loginAuth.submitClass()
-
-		self.webBrowser.navigateToWebpage(loginAuthSite)
-
-		for key, value in loginAuthDict.iteritems():
-			self.webBrowser.sendValueForName(value, key);
-
-		self.webBrowser.submitForClass(loginAuthSubmit)
-
 	def beginCoffeeTime(self, venmoURL):
-		self.auth()
+		loginAuth = CoffeeSafe(self.safePath)
+
+		self.webBrowser.navigateToWebpage(loginAuth.loginSite)
+		self.webBrowser.setValueForSelector(loginAuth.loginUsername, loginAuth.loginUsernameSelector)
+		self.webBrowser.setValueForSelector(loginAuth.loginPassword, loginAuth.loginPasswordSelector)
+		self.webBrowser.submitForSelector(loginAuth.loginSubmitSelector)
+
 		venmoWebpage = self.webBrowser.getWebpageHTMLBody(venmoURL)
-		self.webBrowser.close()
+		self.webBrowser.closeWebpage()
+
 		return venmoWebpage

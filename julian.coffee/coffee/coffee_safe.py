@@ -2,31 +2,27 @@
 import os
 import csv
 
-class CoffeeSafe():
+class CoffeeSafe:
 	safePath = None
+	loginSite ="https://venmo.com/account/sign-in/"
+	loginUsername = None
+	loginPassword = None
+	loginUsernameSelector = ".auth-form-input[data-test=username]"
+	loginPasswordSelector = ".auth-form-input[data-test=password]"
+	loginSubmitSelector = ".auth-button"
 
 	def __init__(self, safePath):
-		self.safePath = safePath
+		self.setupFromConfigFile(safePath)
 
-	def authWebpage(self):
-		return "https://venmo.com/account/sign-in/"
-
-	def venmoConfigFileContents(self):
-		fileName = self.safePath
-		print "getting file contents of " + str(fileName)
-		with open(fileName, 'rb') as csvfile:
+	def setupFromConfigFile(self, safePath):
+		with open(safePath, 'rb') as csvfile:
 			csvreader = csv.reader(csvfile)
 			csvcontents = [e for e in csvreader]
-			print "contents = " + str(csvcontents)
-			return csvcontents
+			self.setupFromConfigFileContents(csvcontents)
 
-	def authDict(self):
-		config = self.venmoConfigFileContents()
+	def setupFromConfigFileContents(self, config):
 		configKeys = config[0]
 		configValues = config[1]
 		configDict = dict(zip(configKeys, configValues))
-		print "dict = " + str(configDict)
-		return configDict
-
-	def submitClass(self):
-		return "auth-button"
+		self.loginUsername = configDict["username"]
+		self.loginPassword = configDict["password"]

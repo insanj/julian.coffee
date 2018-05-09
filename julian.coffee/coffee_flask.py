@@ -9,6 +9,7 @@ serverBrowserLocation = "coffee/external/chromedriver.exe"
 venmoAuthFileLocation = os.path.join(os.getcwd(), "coffee")
 venmoAuthFileLocation = os.path.join(venmoAuthFileLocation, "external")
 venmoAuthFileLocation = os.path.join(venmoAuthFileLocation, "venmo.csv")
+venmoProfileURL = "https://venmo.com/slycecoffee"
 
 onLaunchBrowser = CoffeeBarista(serverBrowserLocation)
 onLaunchBrowser.navigateToWebpage("http://127.0.0.1:5000")
@@ -20,5 +21,4 @@ def index():
 @app.route('/coffeeTime')
 def coffeeTime():
 	coffeeHouse = CoffeeHouse(serverBrowserLocation, venmoAuthFileLocation)
-	coffeeVenmoURL = request.args.get('url', default = '*', type = str)
-	return coffeeHouse.beginCoffeeTime(coffeeVenmoURL)
+	return coffeeHouse.beginCoffeeTime(venmoProfileURL)

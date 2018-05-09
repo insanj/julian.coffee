@@ -10,20 +10,15 @@ class CoffeeBarista():
 	def navigateToWebpage(self, baristaURL):
 		self.baristaBrowser.get(baristaURL)
 
-	def sendValueForKey(self, value, key):
-		element = self.baristaBrowser.find_element_by_class_name(key)
-		element.send_keys(value)
+	def getElementForSelector(self, selector):
+		return self.baristaBrowser.find_element_by_css_selector(selector)
 
-	def sendValueForName(self, value, name):
-		element = self.baristaBrowser.find_element_by_name(name)
+	def setValueForSelector(self, value, selector):
+		element = self.getElementForSelector(selector)
 		element.send_keys(value)
-
-	def submitForClass(self, className):
-		element = self.baristaBrowser.find_element_by_class_name(className)
-		element.submit()
 
 	def submitForSelector(self, selector):
-		element = self.baristaBrowser.find_element_by_css_selector(selector)
+		element = self.getElementForSelector(selector)
 		element.submit()
 
 	def closeWebpage(self):
@@ -31,4 +26,4 @@ class CoffeeBarista():
 
 	def getWebpageHTMLBody(self, baristaURL):
 		self.baristaBrowser.get(baristaURL)
-		print self.baristaBrowser.find_element_by_xpath("/html/body").text
+		return self.getElementForSelector("html").get_attribute("innerHTML")
