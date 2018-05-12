@@ -1,6 +1,8 @@
 #!/usr/bin/python
 import os
 import csv
+import json
+from coffee_cookie import *
 
 class CoffeeSafe:
 	safePath = None
@@ -10,9 +12,13 @@ class CoffeeSafe:
 	loginUsernameSelector = ".auth-form-input[data-test=username]"
 	loginPasswordSelector = ".auth-form-input[data-test=password]"
 	loginSubmitSelector = ".auth-button"
+	
+	cookie = None
 
-	def __init__(self, safePath):
-		self.setupFromConfigFile(safePath)
+	def __init__(self, safePath, venmoCredsFilename="venmo.csv", cookieFilename="coffee_cookie"):
+		venmoPath = os.path.join(safePath, venmoCredsFilename)
+		self.setupFromConfigFile(venmoPath)
+		self.cookie = CoffeeCookie(safePath, cookieFilename)
 
 	def setupFromConfigFile(self, safePath):
 		with open(safePath, 'rb') as csvfile:
@@ -26,3 +32,4 @@ class CoffeeSafe:
 		configDict = dict(zip(configKeys, configValues))
 		self.loginUsername = configDict["username"]
 		self.loginPassword = configDict["password"]
+

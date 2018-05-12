@@ -1,5 +1,6 @@
 #!/usr/bin/python
 from selenium import webdriver
+from coffee_cookie import *
 
 class CoffeeBarista():
 	baristaBrowser = None
@@ -27,3 +28,14 @@ class CoffeeBarista():
 	def getWebpageHTMLBody(self, baristaURL):
 		self.baristaBrowser.get(baristaURL)
 		return self.getElementForSelector("html").get_attribute("innerHTML")
+
+	def setWebpageCookie(self, cookie):
+		print "before setting, here ar ecookies " + str(self.baristaBrowser.get_cookies())
+		if cookie is None:
+			print "setWebpageCookie invalid because null cookie"
+		else:
+			biscotti = cookie.biscottiFormat()
+			print "Yay! biscotti " + str(biscotti)
+			for b in biscotti:
+				print "Yay! b " + str(b)
+				self.baristaBrowser.add_cookie(b)
