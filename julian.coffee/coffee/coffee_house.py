@@ -1,26 +1,44 @@
 #!/usr/bin/python
 from coffee_safe import *
 from coffee_barista import *
+import time
 
 class CoffeeHouse:
-	webBrowser = None
+	browserPath = None
 	safePath = None
 
 	def __init__(self, browserPath, safePath):
-		self.webBrowser = CoffeeBarista(browserPath)
+		self.browserPath = browserPath
 		self.safePath = safePath
 
 	def beginCoffeeTime(self, venmoURL):
+		webBrowser = CoffeeBarista(self.browserPath)
 		loginAuth = CoffeeSafe(self.safePath)
 
-		self.webBrowser.navigateToWebpage(loginAuth.loginSite)
-		self.webBrowser.setWebpageCookie(loginAuth.cookie)
-		self.webBrowser.setValueForSelector(loginAuth.loginUsername, loginAuth.loginUsernameSelector)
-		self.webBrowser.setValueForSelector(loginAuth.loginPassword, loginAuth.loginPasswordSelector)
-		self.webBrowser.submitForSelector(loginAuth.loginSubmitSelector)
+		waitTime = 2
 
-		#venmoWebpage = self.webBrowser.getWebpageHTMLBody(venmoURL)
-		#self.webBrowser.closeWebpage()
+		webBrowser.navigateToWebpage(loginAuth.loginSite)
+		webBrowser.setWebpageCookie(loginAuth.cookie)
+		webBrowser.setValueForSelector(loginAuth.loginUsername, loginAuth.loginUsernameSelector)
+		webBrowser.setValueForSelector(loginAuth.loginPassword, loginAuth.loginPasswordSelector)
+		webBrowser.submitForSelector(loginAuth.loginSubmitSelector)
+		# self.webBrowser.waitForSelector(loginAuth.loginSMSSelector)
+		time.sleep(waitTime)
 
-		#return venmoWebpage
-		return "Hello"
+		webBrowser.submitForSelector(loginAuth.loginSMSSelector)
+		time.sleep(waitTime)
+
+		mfaNumber = loginAuth.readVerificationNumber()
+		webBrowser.setValueForSelector(mfaNumber, loginAuth.loginMFAFormSelector)
+		webBrowser.submitForSelector(loginAuth.loginSubmitSelector)
+		time.sleep(waitTime)
+
+		webBrowser.submitForSelector(loginAuth.loginSubmitSelector)
+		venmoWebpage = webBrowser.getWebpageHTMLBody(venmoURL)
+		webBrowser.closeWebpage()
+		return venmoWebpage
+
+	def rememberVerificationNumber(self, verificationNumber):
+		safe = CoffeeSafe(self.safePath)
+		safe.writeVerificationNumber(verificationNumber)
+		return True

@@ -25,6 +25,7 @@ class CoffeeScraper {
 		$.ajax({
 			dataType: "html",
 			url: htmlURL,
+		    timeout: 20000,
 			beforeSend: function(xhr) {
 				xhr.setRequestHeader("Access-Control-Allow-Origin", "*");
 			},

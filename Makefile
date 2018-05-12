@@ -2,9 +2,14 @@
 # rsync
 FLASK_APP=coffee_flask.py
 SRC_DIR=julian.coffee
+NGROK_PATH=C:/Users/insan/Documents/julian.coffee/julian.coffee/coffee/external/ngrok.exe
+NGROK_CMD=$(NGROK_PATH) http 5000
 
-windows:
+windows: # ngrok
 	cd $(SRC_DIR) && set FLASK_APP=$(FLASK_APP) && flask run
+
+ngrok:
+	start cmd.exe @cmd /k "$(NGROK_CMD)"
 
 curl:	
 	curl https://venmo.com/slycecoffee >> resources/venmo_mock.html
@@ -14,6 +19,7 @@ curl:
 deps:
 	pip install flask
 	pip install selenium
+	pip install twilio
 
 ship:
 	apt-get install git-ftp

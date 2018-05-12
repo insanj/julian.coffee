@@ -12,10 +12,16 @@ class CoffeeSafe:
 	loginUsernameSelector = ".auth-form-input[data-test=username]"
 	loginPasswordSelector = ".auth-form-input[data-test=password]"
 	loginSubmitSelector = ".auth-button"
+	loginSMSSelector = ".mfa-button-code-prompt"
+	loginMFAFormSelector = ".auth-form-input"
 	
 	cookie = None
+	mfaFilename = None
 
-	def __init__(self, safePath, venmoCredsFilename="venmo.csv", cookieFilename="coffee_cookie"):
+	def __init__(self, safePath, venmoCredsFilename="venmo.csv", cookieFilename="coffee_cookie", mfaFilename="coffee_mfa"):
+		self.safePath = safePath
+		self.mfaFilename = mfaFilename
+
 		venmoPath = os.path.join(safePath, venmoCredsFilename)
 		self.setupFromConfigFile(venmoPath)
 		self.cookie = CoffeeCookie(safePath, cookieFilename)
@@ -33,3 +39,17 @@ class CoffeeSafe:
 		self.loginUsername = configDict["username"]
 		self.loginPassword = configDict["password"]
 
+	def verificationNumberPath(self):
+		return os.path.join(self.safePath, self.mfaFilename)
+
+	def writeVerificationNumber(self, number):
+		numPath = self.verificationNumberPath()
+		with open(numPath, 'w+') as numFile:
+			numFile.write(number)
+
+		return True
+
+	def readVerificationNumber(self):
+		numPath = self.verificationNumberPath()
+		with open(numPath, 'rb') as numFile:
+			return numFile.read()
