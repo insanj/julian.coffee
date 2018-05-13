@@ -11,9 +11,10 @@ class CoffeeBarista():
 	baristaBrowser = None
 
 	def __init__(self, browserPath):
-		opts = Options()
+		opts = webdriver.ChromeOptions()
+		opts.binary_location = "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" # mac only
 		opts.add_argument("user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36")
-		self.baristaBrowser = webdriver.Chrome(browserPath, chrome_options=opts)
+		self.baristaBrowser = webdriver.Chrome(executable_path=browserPath, chrome_options=opts)
 
 	def navigateToWebpage(self, baristaURL):
 		self.baristaBrowser.get(baristaURL)
