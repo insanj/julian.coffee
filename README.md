@@ -1,8 +1,10 @@
 ﻿<p align="center">
-   <img src="resources/coffee.png" width=75 height=75 />
+   <img src="julian.coffee/static/coffee.png" width=75 height=75 />
    <h3 align="center">julian.coffee</h3>
-   <h4 align="center">auto slyce nespresso patrons via venmo</h4>
+   <h4 align="center">python bot that crawls slyce nespresso patrons via venmo</h4>
 </p>
+
+<img src="julian.coffee/static/example.png" width=100% height=auto />
 
 ## Built with
 
@@ -10,7 +12,7 @@
 - [pallets/flask](https://github.com/pallets/flask)
 - [jquery/jquery](https://github.com/jquery/jquery)
 - [selenium](https://pypi.org/project/selenium/)
-- [1pass](https://pypi.org/project/1pass/)
+- [twilio](https://www.twilio.com/)
 
 ## License
 
