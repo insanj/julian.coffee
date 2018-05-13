@@ -18,7 +18,7 @@ class CoffeeHouse:
 		waitTime = 2
 
 		webBrowser.navigateToWebpage(loginAuth.loginSite)
-		webBrowser.setWebpageCookie(loginAuth.cookie)
+		# webBrowser.setWebpageCookie(loginAuth.cookie)
 		webBrowser.setValueForSelector(loginAuth.loginUsername, loginAuth.loginUsernameSelector)
 		webBrowser.setValueForSelector(loginAuth.loginPassword, loginAuth.loginPasswordSelector)
 		webBrowser.submitForSelector(loginAuth.loginSubmitSelector)
@@ -34,7 +34,11 @@ class CoffeeHouse:
 		time.sleep(waitTime)
 
 		webBrowser.submitForSelector(loginAuth.loginSubmitSelector)
-		venmoWebpage = webBrowser.getWebpageHTMLBody(venmoURL)
+		webBrowser.navigateToWebpage(venmoURL)
+
+		time.sleep(waitTime)
+
+		venmoWebpage = webBrowser.getWebpageHTMLBody()
 		webBrowser.closeWebpage()
 		return venmoWebpage
 

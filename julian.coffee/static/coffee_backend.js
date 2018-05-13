@@ -66,17 +66,19 @@ class CoffeeScraper {
 
 	parseHTMLIntoNameCountDict(parsableHTML) {
 		var parsedHTML = $.parseHTML(parsableHTML);
-		var parsableNodes = $(parsedHTML).find(".single-payment");
+		var parsableNodes = $(parsedHTML).find(".relative");
 
 		var parser = this;
 		var parsedNameCounts = {};
 		$.each(parsableNodes, function(i, el) {
 			var name = parser.parseVenmoNameFromHTMLNode(el);
-			var existingCount = parsedNameCounts[name];
-			if (existingCount) {
-				parsedNameCounts[name] = existingCount + 1;
-			} else {
-				parsedNameCounts[name] = 1;
+			if (name != null) {
+				var existingCount = parsedNameCounts[name];
+				if (existingCount) {
+					parsedNameCounts[name] = existingCount + 1;
+				} else {
+					parsedNameCounts[name] = 1;
+				}
 			}
 		});
 
@@ -84,6 +86,11 @@ class CoffeeScraper {
 	}
 
 	parseVenmoNameFromHTMLNode(htmlNode) {
-		return $(htmlNode).find(".paymentpage-subline").find("a")[0].text;
+		var links = $(htmlNode).find("a");
+		if (links == null || links.length <= 0) {
+			return null;
+		} else {
+			return links[0].getAttribute("title");
+		}
 	}
 }

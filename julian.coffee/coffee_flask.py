@@ -14,8 +14,8 @@ venmoAuthLocation = os.path.join(os.getcwd(), "coffee")
 venmoAuthLocation = os.path.join(venmoAuthLocation, "external")
 venmoProfileURL = "https://venmo.com/slycecoffee"
 
-onLaunchBrowser = CoffeeBarista(serverBrowserLocation)
-onLaunchBrowser.navigateToWebpage("http://" + appHost + ":" + appPort)
+# onLaunchBrowser = CoffeeBarista(serverBrowserLocation)
+# onLaunchBrowser.navigateToWebpage("http://" + appHost + ":" + appPort)
 
 coffeeHouse = CoffeeHouse(serverBrowserLocation, venmoAuthLocation)
 

@@ -8,7 +8,7 @@ NGROK_CMD=$(NGROK_PATH) http 5000
 windows: # ngrok
 	cd $(SRC_DIR) && set FLASK_APP=$(FLASK_APP) && flask run
 
-ngrok:
+ngrok: # configure the result of this in Twilio dashboard for callback
 	start cmd.exe @cmd /k "$(NGROK_CMD)"
 
 curl:	

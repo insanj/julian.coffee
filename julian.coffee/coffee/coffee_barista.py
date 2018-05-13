@@ -5,12 +5,15 @@ from selenium.common.exceptions import TimeoutException
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
+from selenium.webdriver.chrome.options import Options
 
 class CoffeeBarista():
 	baristaBrowser = None
 
 	def __init__(self, browserPath):
-		self.baristaBrowser = webdriver.Chrome(browserPath)
+		opts = Options()
+		opts.add_argument("user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36")
+		self.baristaBrowser = webdriver.Chrome(browserPath, chrome_options=opts)
 
 	def navigateToWebpage(self, baristaURL):
 		self.baristaBrowser.get(baristaURL)
@@ -29,8 +32,7 @@ class CoffeeBarista():
 	def closeWebpage(self):
 		self.baristaBrowser.quit()
 
-	def getWebpageHTMLBody(self, baristaURL):
-		self.baristaBrowser.get(baristaURL)
+	def getWebpageHTMLBody(self):
 		return self.getElementForSelector("html").get_attribute("innerHTML")
  
 	def setWebpageCookie(self, cookie):
