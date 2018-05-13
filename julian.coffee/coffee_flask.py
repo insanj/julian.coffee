@@ -9,7 +9,7 @@ app = Flask(__name__)
 appHost = '127.0.0.1'
 appPort = '5000'
 
-serverBrowserLocation = "coffee/external/chromedriver.exe"
+serverBrowserLocation = "coffee/external/chromedriver"
 venmoAuthLocation = os.path.join(os.getcwd(), "coffee")
 venmoAuthLocation = os.path.join(venmoAuthLocation, "external")
 venmoProfileURL = "https://venmo.com/slycecoffee"
