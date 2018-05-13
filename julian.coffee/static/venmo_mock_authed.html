@@ -1,0 +1,1923 @@
+<head><script type="text/javascript" src="https://bam.nr-data.net/1/14eefaaf38?a=2367894&amp;v=1071.385e752&amp;to=ZlRQbUJZDEZUUUUNXF8edExeWxZcWlweE1ZTUEJJHmsLW1JeVDNcQ1VxVl5MEFpZXlQWCWJYXF5cXTVaR1ZyC11FQ11VXF0QG1FbQhRSRVJa&amp;rst=350&amp;ref=https://venmo.com/slycecoffee&amp;ap=137&amp;be=179&amp;fe=338&amp;dc=274&amp;perf=%7B%22timing%22:%7B%22of%22:1526227799306,%22n%22:0,%22u%22:172,%22ue%22:172,%22f%22:0,%22dn%22:0,%22dne%22:0,%22c%22:0,%22ce%22:0,%22rq%22:2,%22rp%22:171,%22rpe%22:172,%22dl%22:175,%22di%22:274,%22ds%22:274,%22de%22:277,%22dc%22:337,%22l%22:337,%22le%22:349%7D,%22navigation%22:%7B%7D%7D&amp;jsonp=NREUM.setToken"></script><script async="" src="https://www.google-analytics.com/analytics.js"></script><script src="https://js-agent.newrelic.com/nr-1071.min.js"></script><script type="text/javascript" async="" src="https://d24n15hnbwhuhn.cloudfront.net/libs/amplitude-3.4.0-min.gz.js"></script><script id="facebook-jssdk" async="" src="//connect.facebook.net/en_US/sdk.js"></script><script type="text/javascript" async="" src="https://jssdkcdns.mparticle.com/js/v1/40433222e815b743853a4bb6b7a86058/mparticle.js"></script><script type="text/javascript" async="" src="https://cdn.mxpnl.com/libs/mixpanel-2.2.min.js"></script><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[f.now()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,t){s[t]=o(d+t,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(l+"tracer",[f.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],n),o)try{return t.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],n),e}finally{c.emit("fn-end",[f.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=o(l+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,f.now()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],4:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o,i){if(!d.aborted||i){e&&e(n,r,o);for(var a=t(o),u=m(n),c=u.length,f=0;f<c;f++)u[f].apply(a,r);var p=s[y[n]];return p&&p.push([b,n,r,a]),a}}function l(e,t){v[e]=m(e).concat(t)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(n)}function g(e,t){f(e,function(e,n){t=t||"feature",y[n]=t,t in s||(s[t]=[])})}var v={},y={},b={on:l,emit:n,get:w,listeners:m,context:t,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},p={},d=t.exports=o();d.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!x++){var e=h.info=NREUM.info,t=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return s.abort();f(y,function(t,n){e[t]||(e[t]=n)}),c("mark",["onload",a()+h.offset],null,"api");var n=d.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===d.readyState&&i()}function i(){c("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),c=e("handle"),f=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1071.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=t.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),c("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","queueTime":0,"licenseKey":"14eefaaf38","agent":"","transactionName":"ZlRQbUJZDEZUUUUNXF8edExeWxZcWlweE1ZTUEJJHmsLW1JeVDNcQ1VxVl5MEFpZXlQWCWJYXF5cXTVaR1ZyC11FQ11VXF0QG1FbQhRSRVJa","applicationID":"2367894","errorBeacon":"bam.nr-data.net","applicationTime":137}</script>
+    <title>Venmo  | Nicole Harris</title>
+   
+
+<meta name="google-site-verification" content="TMDCH0wKTDWnWjChUE4nnRW7K-ZW1AQVHjUM25Vpf-o">
+<meta name="google-site-verification" content="OiQsJpddveC7tOGSY-LDHekSXyAOZboukHdA95NZzNw">
+
+
+<meta name="description" content="Venmoing since Mar 2018.">
+
+
+<meta name="keywords" content="Venmo, Payments, Social Payments, Mobile Payments, Mobile Payment App, Friends, Pay Your Friends, Startup, Fun, Free, Simple, Split Bill, Split Check, Split Dinner, iPhone App, Android App, New York City, NYC">
+<link rel="shortcut icon" href="https://d1v6x81qdeozhc.cloudfront.net/static/images/icons/favicon-52320fded27b1c2320b67d782f799882.ico" type="image/x-icon">
+<link rel="icon" href="https://d1v6x81qdeozhc.cloudfront.net/static/images/icons/favicon-52320fded27b1c2320b67d782f799882.ico" type="image/x-icon">
+<link rel="image_src" href="https://s3.amazonaws.com/venmo/venmo100x100.jpg">
+<link rel="apple-touch-icon" href="https://d1v6x81qdeozhc.cloudfront.net/static/images/logo/apple-touch-icon-1a10ee4b947b728d54265ac8c5084f78.png">
+
+
+
+
+
+
+
+    <link rel="stylesheet" href="https://d1v6x81qdeozhc.cloudfront.net/static/css/reset-fonts-grids-b09b1f223e325e3648101f405347dde3.gz.css" type="text/css">
+    
+    <link rel="stylesheet" href="https://d1v6x81qdeozhc.cloudfront.net/static/css/app.web.1-5a9bd8417daf8939916a9f2de93f7dcf.gz.css" type="text/css" media="screen" title="venmo web" charset="utf-8">
+    <link rel="stylesheet" href="https://d1v6x81qdeozhc.cloudfront.net/static/css/js-c6e5024b89d7ec58b0233efc69f1a214.gz.css" type="text/css" media="screen" title="venmo web" charset="utf-8">
+
+
+
+   
+
+
+    
+
+    
+      <script type="text/javascript" src="https://d1v6x81qdeozhc.cloudfront.net/static/js/compiled-venmo-44517423317bf1f690ae5ab0514e26ec.gz.js"></script>
+      <script src="https://d1v6x81qdeozhc.cloudfront.net/static/js/venmo.j5.min-6eb3b08e05dc833a5787a6a54ad3dcc2.gz.js"></script>
+    
+
+
+   
+   
+    <script type="text/javascript" charset="utf-8">
+      
+try { if (top !== self) top.location.href = self.location.href; } catch(zzz) {}
+
+//
+venmo.logged_in_user_id = 36730548;
+venmo.logged_in_user_leading_for_pref = false;
+venmo.contacts =  [{"username": "slycecoffee", "first_name": "Nicole", "last_name": "Harris", "user_id": 33685735, "is_group": false, "about": " ", "profile_picture": "https://venmopics.appspot.com/u/v1/s/81a21320-00dc-48da-8925-ee4482b8f3e0", "full_name": "Nicole Harris", "img_url": "https://venmopics.appspot.com/u/v1/s/81a21320-00dc-48da-8925-ee4482b8f3e0", "id": 33685735}] || [];
+venmo.all_contacts_by_uuid =  {};
+venmo.load.num_friends = 0;
+
+venmo.load.DO_HOME = false;
+
+
+venmo.load.on_homepage_logged_in = false;
+
+
+venmo.load.mixpanel_identify_id = null;
+
+venmo.login_url = "/account/login/?next_url=/slycecoffee";
+venmo.load.REDIRECT_ANDROID = false;
+venmo.load.REDIRECT_IPHONE = false;
+venmo.onebox_audience_setting = "public"
+venmo.onebox_sharing_settings = "v"
+venmo.logged_in_user_balance = 0.0
+//
+venmo.logged_in_user = {"last_name": "weiss", "lookup_balance_float": 0.0, "full_name": "julian weiss", "watchlisted": false, "suspended": false, "profile_picture_medium": "https://venmopics.appspot.com/u/v1/m/cda01776-53e3-4510-b525-5f92170f1c07", "id": 36730548, "first_name": "julian", "user_id": 36730548, "profile_picture_large": "https://venmopics.appspot.com/u/v1/l/cda01776-53e3-4510-b525-5f92170f1c07", "facebook_id": null, "email": "julian@slyce.it", "phone_is_verified": true, "username": "julian-weiss-4", "is_group": false, "about": " ", "phone": "15162262359", "profile_picture": "https://venmopics.appspot.com/u/v1/s/cda01776-53e3-4510-b525-5f92170f1c07", "share_publicly": 1, "business_name": null, "is_business": false, "blacklisted": null, "best_full_name": "julian weiss", "external_id": 2478449256038400830, "date_created": "Sun, May 13 2018 14:36:15 GMT", "SUPER": "VenmoUser", "f_balance": "$0.00"};
+//
+//
+venmo.logged_in_user_api_format = {"username": "julian-weiss-4", "picture": "https://venmopics.appspot.com/u/v1/m/cda01776-53e3-4510-b525-5f92170f1c07", "is_business": false, "name": "julian weiss", "firstname": "julian", "lastname": "weiss", "cancelled": false, "date_created": "2018-05-13T14:36:15", "external_id": "2478449256038400830", "id": "36730548"};
+//
+//
+
+
+    venmo.load.render_get_started = true;
+
+
+
+
+//
+
+//
+venmo.friends.INVITE_CODE_FOR_FRIENDS = 'https://venmo.com/i/julian-weiss-4';
+//
+
+//
+
+//
+//
+// 
+
+//
+venmo.logged_in_user_profile_picture = 'https://venmopics.appspot.com/u/v1/s/cda01776-53e3-4510-b525-5f92170f1c07';
+//
+
+//
+venmo.page_user = {"username": "slycecoffee", "first_name": "Nicole", "last_name": "Harris", "user_id": 33685735, "is_group": false, "about": " ", "profile_picture": "https://venmopics.appspot.com/u/v1/s/81a21320-00dc-48da-8925-ee4482b8f3e0", "full_name": "Nicole Harris", "img_url": "https://venmopics.appspot.com/u/v1/s/81a21320-00dc-48da-8925-ee4482b8f3e0", "id": 33685735};
+//
+
+//
+
+//
+venmo.load.default_profile_feed = 'profile';
+//
+//
+//
+
+//
+
+venmo.load.business_name = "None";
+
+//
+
+
+//
+
+//
+
+//
+venmo.load.host_name = 'https://venmo.com';
+//
+
+//
+
+//
+
+
+//
+
+//
+
+//
+
+//
+
+//
+
+//
+
+//
+
+//
+
+// 
+
+// 
+
+
+
+    venmo.load.DO_fade_right_nav = true;
+
+venmo.load.ARG_fade_right_nav = true;
+
+
+
+// This loads the filter box within /network/create?domain=facebook
+//
+
+// The following is still used for search
+venmo.story.classes.SORTED_STORY = venmo.story.classes.SORTED_STORY || {};
+// 
+// 
+
+venmo.story.classes.SORTED_STORY_EVERYONE = venmo.story.classes.SORTED_STORY_EVERYONE || {};
+// 
+// 
+
+// 
+
+//
+
+//
+
+//
+
+venmo.load.MDJ = {"logged_in_user": {"last_name": "weiss", "lookup_balance_float": 0.0, "full_name": "julian weiss", "watchlisted": false, "suspended": false, "profile_picture_medium": "https://venmopics.appspot.com/u/v1/m/cda01776-53e3-4510-b525-5f92170f1c07", "id": 36730548, "first_name": "julian", "user_id": 36730548, "profile_picture_large": "https://venmopics.appspot.com/u/v1/l/cda01776-53e3-4510-b525-5f92170f1c07", "facebook_id": null, "email": "julian@slyce.it", "phone_is_verified": true, "username": "julian-weiss-4", "is_group": false, "about": " ", "phone": "15162262359", "profile_picture": "https://venmopics.appspot.com/u/v1/s/cda01776-53e3-4510-b525-5f92170f1c07", "share_publicly": 1, "business_name": null, "is_business": false, "blacklisted": null, "best_full_name": "julian weiss", "external_id": 2478449256038400830, "date_created": "Sun, May 13 2018 14:36:15 GMT", "SUPER": "VenmoUser", "f_balance": "$0.00"}, "PROTOCOL": "https", "logged_in_user_api_format": {"username": "julian-weiss-4", "picture": "https://venmopics.appspot.com/u/v1/m/cda01776-53e3-4510-b525-5f92170f1c07", "is_business": false, "name": "julian weiss", "firstname": "julian", "lastname": "weiss", "cancelled": false, "date_created": "2018-05-13T14:36:15", "external_id": "2478449256038400830", "id": "36730548"}, "profile_page_user": {"username": "slycecoffee", "first_name": "Nicole", "last_name": "Harris", "user_id": 33685735, "is_group": false, "about": " ", "profile_picture": "https://venmopics.appspot.com/u/v1/s/81a21320-00dc-48da-8925-ee4482b8f3e0", "full_name": "Nicole Harris", "img_url": "https://venmopics.appspot.com/u/v1/s/81a21320-00dc-48da-8925-ee4482b8f3e0", "id": 33685735}, "page_user": {"username": "slycecoffee", "first_name": "Nicole", "last_name": "Harris", "user_id": 33685735, "is_group": false, "about": " ", "profile_picture": "https://venmopics.appspot.com/u/v1/s/81a21320-00dc-48da-8925-ee4482b8f3e0", "full_name": "Nicole Harris", "img_url": "https://venmopics.appspot.com/u/v1/s/81a21320-00dc-48da-8925-ee4482b8f3e0", "id": 33685735}, "page_user_is_logged_in_user": false, "HTTPS_PROTOCOL": true};
+//
+
+
+//
+venmo.load.fb_is_connected = false;
+//
+//
+//
+venmo.load.fb_can_publish = false;
+//
+
+//
+venmo.load.fb_permissions = 'publish_actions';
+//
+
+//
+
+//
+
+//
+venmo.load.show_disputes_repayment_modal = false;
+//
+
+
+venmo.API_BASE_URL = 'https://api.venmo.com';
+venmo.SESSION_TTL = 1500;
+
+
+if (Vemplate && Vemplate.GLOBALS) Vemplate.GLOBALS['VERSION_PATH'] = '';
+
+    </script>
+   
+       
+<meta property="og:type" content="paybyphone:friend">
+
+<meta property="og:title" content="Nicole Harris">
+
+<meta property="og:url" content="https://venmo.com/slycecoffee">
+<meta property="og:image" content="https://s3.amazonaws.com/venmo/venmo100x100.jpg">
+<meta property="og:site_name" content="Venmo.com">
+<meta property="og:description" content="Venmoing since Mar 2018.">
+<meta property="fb:app_id" content="180347063770">
+<meta property="fb:admins" content="2804997">
+
+   
+   <script type="text/javascript">
+    (function(c,a){window.mixpanel=a;var b,d,h,e;b=c.createElement("script");
+    b.type="text/javascript";b.async=!0;b.src=("https:"===c.location.protocol?"https:":"http:")+
+    '//cdn.mxpnl.com/libs/mixpanel-2.2.min.js';d=c.getElementsByTagName("script")[0];
+    d.parentNode.insertBefore(b,d);a._i=[];a.init=function(b,c,f){function d(a,b){
+    var c=b.split(".");2==c.length&&(a=a[c[0]],b=c[1]);a[b]=function(){a.push([b].concat(
+    Array.prototype.slice.call(arguments,0)))}}var g=a;"undefined"!==typeof f?g=a[f]=[]:
+    f="mixpanel";g.people=g.people||[];h=['disable','track','track_pageview','track_links',
+    'track_forms','register','register_once','unregister','identify','alias','name_tag',
+    'set_config','people.set','people.increment','people.track_charge','people.append'];
+    for(e=0;e<h.length;e++)d(g,h[e]);a._i.push([b,c,f])};a.__SV=1.2;})(document,window.mixpanel||[]);
+    mixpanel.init("4e86a2fbdc0db1b114ec9fd3268211aa");
+</script>
+
+   <script type="text/javascript">
+  (function (apiKey) {
+    window.mParticle = window.mParticle || {};
+    window.mParticle.config = window.mParticle.config || {};
+    window.mParticle.config.rq = [];
+    window.mParticle.ready = function (f) {
+        window.mParticle.config.rq.push(f);
+    };
+    var mp = document.createElement('script');
+    mp.type = 'text/javascript';
+    mp.async = true;
+    mp.src = ('https:' == document.location.protocol ? 'https://jssdkcdns' : 'http://jssdkcdn') + '.mparticle.com/js/v1/' + apiKey + '/mparticle.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(mp, s);
+  })("40433222e815b743853a4bb6b7a86058");
+</script>
+
+
+<style type="text/css">.fb_hidden{position:absolute;top:-10000px;z-index:10001}.fb_reposition{overflow:hidden;position:relative}.fb_invisible{display:none}.fb_reset{background:none;border:0;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:"lucida grande", tahoma, verdana, arial, sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}.fb_reset>div{overflow:hidden}.fb_link img{border:none}@keyframes fb_transform{from{opacity:0;transform:scale(.95)}to{opacity:1;transform:scale(1)}}.fb_animate{animation:fb_transform .3s forwards}
+.fb_dialog{background:rgba(82, 82, 82, .7);position:absolute;top:-10000px;z-index:10001}.fb_reset .fb_dialog_legacy{overflow:visible}.fb_dialog_advanced{padding:10px;border-radius:8px}.fb_dialog_content{background:#fff;color:#333}.fb_dialog_close_icon{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;cursor:pointer;display:block;height:15px;position:absolute;right:18px;top:17px;width:15px}.fb_dialog_mobile .fb_dialog_close_icon{top:5px;left:5px;right:auto}.fb_dialog_padding{background-color:transparent;position:absolute;width:1px;z-index:-1}.fb_dialog_close_icon:hover{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -15px transparent}.fb_dialog_close_icon:active{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -30px transparent}.fb_dialog_loader{background-color:#f6f7f9;border:1px solid #606060;font-size:24px;padding:20px}.fb_dialog_top_left,.fb_dialog_top_right,.fb_dialog_bottom_left,.fb_dialog_bottom_right{height:10px;width:10px;overflow:hidden;position:absolute}.fb_dialog_top_left{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 0;left:-10px;top:-10px}.fb_dialog_top_right{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 -10px;right:-10px;top:-10px}.fb_dialog_bottom_left{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 -20px;bottom:-10px;left:-10px}.fb_dialog_bottom_right{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 -30px;right:-10px;bottom:-10px}.fb_dialog_vert_left,.fb_dialog_vert_right,.fb_dialog_horiz_top,.fb_dialog_horiz_bottom{position:absolute;background:#525252;filter:alpha(opacity=70);opacity:.7}.fb_dialog_vert_left,.fb_dialog_vert_right{width:10px;height:100%}.fb_dialog_vert_left{margin-left:-10px}.fb_dialog_vert_right{right:0;margin-right:-10px}.fb_dialog_horiz_top,.fb_dialog_horiz_bottom{width:100%;height:10px}.fb_dialog_horiz_top{margin-top:-10px}.fb_dialog_horiz_bottom{bottom:0;margin-bottom:-10px}.fb_dialog_iframe{line-height:0}.fb_dialog_content .dialog_title{background:#6d84b4;border:1px solid #365899;color:#fff;font-size:14px;font-weight:bold;margin:0}.fb_dialog_content .dialog_title>span{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yd/r/Cou7n-nqK52.gif) no-repeat 5px 50%;float:left;padding:5px 0 7px 26px}body.fb_hidden{-webkit-transform:none;height:100%;margin:0;overflow:visible;position:absolute;top:-10000px;left:0;width:100%}.fb_dialog.fb_dialog_mobile.loading{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ya/r/3rhSv5V8j3o.gif) white no-repeat 50% 50%;min-height:100%;min-width:100%;overflow:hidden;position:absolute;top:0;z-index:10001}.fb_dialog.fb_dialog_mobile.loading.centered{width:auto;height:auto;min-height:initial;min-width:initial;background:none}.fb_dialog.fb_dialog_mobile.loading.centered #fb_dialog_loader_spinner{width:100%}.fb_dialog.fb_dialog_mobile.loading.centered .fb_dialog_content{background:none}.loading.centered #fb_dialog_loader_close{color:#fff;display:block;padding-top:20px;clear:both;font-size:18px}#fb-root #fb_dialog_ipad_overlay{background:rgba(0, 0, 0, .45);position:absolute;bottom:0;left:0;right:0;top:0;width:100%;min-height:100%;z-index:10000}#fb-root #fb_dialog_ipad_overlay.hidden{display:none}.fb_dialog.fb_dialog_mobile.loading iframe{visibility:hidden}.fb_dialog_content .dialog_header{-webkit-box-shadow:white 0 1px 1px -1px inset;background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#738ABA), to(#2C4987));border-bottom:1px solid;border-color:#1d4088;color:#fff;font:14px Helvetica, sans-serif;font-weight:bold;text-overflow:ellipsis;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0;vertical-align:middle;white-space:nowrap}.fb_dialog_content .dialog_header table{-webkit-font-smoothing:subpixel-antialiased;height:43px;width:100%}.fb_dialog_content .dialog_header td.header_left{font-size:12px;padding-left:5px;vertical-align:middle;width:60px}.fb_dialog_content .dialog_header td.header_right{font-size:12px;padding-right:5px;vertical-align:middle;width:60px}.fb_dialog_content .touchable_button{background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#4966A6), color-stop(.5, #355492), to(#2A4887));border:1px solid #29487d;-webkit-background-clip:padding-box;-webkit-border-radius:3px;-webkit-box-shadow:rgba(0, 0, 0, .117188) 0 1px 1px inset, rgba(255, 255, 255, .167969) 0 1px 0;display:inline-block;margin-top:3px;max-width:85px;line-height:18px;padding:4px 12px;position:relative}.fb_dialog_content .dialog_header .touchable_button input{border:none;background:none;color:#fff;font:12px Helvetica, sans-serif;font-weight:bold;margin:2px -12px;padding:2px 6px 3px 6px;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog_content .dialog_header .header_center{color:#fff;font-size:16px;font-weight:bold;line-height:18px;text-align:center;vertical-align:middle}.fb_dialog_content .dialog_content{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/y9/r/jKEcVPZFk-2.gif) no-repeat 50% 50%;border:1px solid #555;border-bottom:0;border-top:0;height:150px}.fb_dialog_content .dialog_footer{background:#f6f7f9;border:1px solid #555;border-top-color:#ccc;height:40px}#fb_dialog_loader_close{float:left}.fb_dialog.fb_dialog_mobile .fb_dialog_close_button{text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog.fb_dialog_mobile .fb_dialog_close_icon{visibility:hidden}#fb_dialog_loader_spinner{animation:rotateSpinner 1.2s linear infinite;background-color:transparent;background-image:url(https://static.xx.fbcdn.net/rsrc.php/v3/yD/r/t-wz8gw1xG1.png);background-repeat:no-repeat;background-position:50% 50%;height:24px;width:24px}@keyframes rotateSpinner{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}
+.fb_iframe_widget{display:inline-block;position:relative}.fb_iframe_widget span{display:inline-block;position:relative;text-align:justify}.fb_iframe_widget iframe{position:absolute}.fb_iframe_widget_fluid_desktop,.fb_iframe_widget_fluid_desktop span,.fb_iframe_widget_fluid_desktop iframe{max-width:100%}.fb_iframe_widget_fluid_desktop iframe{min-width:220px;position:relative}.fb_iframe_widget_lift{z-index:1}.fb_hide_iframes iframe{position:relative;left:-10000px}.fb_iframe_widget_loader{position:relative;display:inline-block}.fb_iframe_widget_fluid{display:inline}.fb_iframe_widget_fluid span{width:100%}.fb_iframe_widget_loader iframe{min-height:32px;z-index:2;zoom:1}.fb_iframe_widget_loader .FB_Loader{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/y9/r/jKEcVPZFk-2.gif) no-repeat;height:32px;width:32px;margin-left:-16px;position:absolute;left:50%;z-index:4}
+.fb_customer_chat_bounce_in{animation-duration:250ms;animation-name:fb_bounce_in}.fb_customer_chat_bounce_out{animation-duration:250ms;animation-name:fb_fade_out}.fb_invisible_flow{display:inherit;height:0;overflow-x:hidden;width:0}.fb_mobile_overlay_active{background-color:#fff;height:100%;overflow:hidden;position:fixed;visibility:hidden;width:100%}@keyframes fb_fade_out{from{opacity:1}to{opacity:0}}@keyframes fb_bounce_in{0%{opacity:0;transform:scale(.8, .8);transform-origin:100% 100%}10%{opacity:.1}20%{opacity:.2}30%{opacity:.3}40%{opacity:.4}50%{opacity:.5}60%{opacity:.6}70%{opacity:.7}80%{opacity:.8;transform:scale(1.03, 1.03)}90{opacity:.9}100%{opacity:1;transform:scale(1, 1)}}</style></head>
+
+<body class="align_center">
+<div id="fb-root" class=" fb_reset"><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div><iframe name="fb_xdm_frame_https" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" id="fb_xdm_frame_https" aria-hidden="true" title="Facebook Cross Domain Communication Frame" tabindex="-1" src="https://staticxx.facebook.com/connect/xd_arbiter/r/RQ7NiRXMcYA.js?version=42#channel=f19d45978828a0c&amp;origin=https%3A%2F%2Fvenmo.com" style="border: none;"></iframe></div></div><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div></div></div></div>
+<script type="text/javascript">
+    window.fbAsyncInit = function() {
+         // init the FB JS SDK
+        FB.init({
+            appId: '180347063770',
+            status: true,
+            cookie: true,
+            xfbml: true,
+            channelUrl: 'https://venmo.com/channel.html',
+            frictionlessRequests : true,
+            version: 'v2.1'
+        });
+
+        // Additional initialization code such as adding Event Listeners goes here
+        venmo.load.fbInit();
+    };
+    // Load the SDK's source Asynchronously
+    // Note that the debug version is being actively developed and might
+    // contain some type checks that are overly strict.
+    // Please report such bugs using the bugs tool.
+    (function(d, debug){
+         var js, id = 'facebook-jssdk', ref = d.getElementsByTagName('script')[0];
+         if (d.getElementById(id)) {return;}
+         js = d.createElement('script'); js.id = id; js.async = true;
+         js.src = "//connect.facebook.net/en_US/sdk" + (debug ? "/debug" : "") + ".js";
+         ref.parentNode.insertBefore(js, ref);
+    }(document, /*debug*/ false));
+
+</script>
+
+<div class="v5_body_background"> 
+    <div id="header_common_csrf"><input type="hidden" name="csrfmiddlewaretoken" value="wzrcvGHt2sTlVpfziDFYqNqcynF9iO3J"></div>
+<div id="loading_indicator" style="display:none; z-index:9999; position:fixed; top:0px; left:0px; color:#666;font-weight:bold;padding:5px 5px;font-size:13px;background:#eef;">Loading...</div>
+<div id="__touch_saving" style="display:none; z-index:9999; position:fixed; top:2px; right:2px; color:#999;background:#000; opacity:0.75; padding:2px 5px;font-size:11px;" class="rounded2">Saving...</div>
+<div id="__touch_loading" style="display:none; z-index:9999; position:fixed; top:2px; right:2px; color:#999;background:#000; opacity:0.75; padding:2px 5px;font-size:11px;" class="rounded2">Loading...</div>
+<script type="text/javascript" charset="utf-8">
+    try{
+        goog.events.listen(window, 'load', venmo.load.window);
+    } catch(zz) {
+        window.onload = venmo.load.window;
+    }
+</script>
+
+    
+    
+
+
+    <input type="hidden" value="julian-weiss-4" id="js_logged_in_username_holder">
+    
+
+<div id="js_messaging" style=" display:none; width:100%;z-index:999999;top:31px" class="fixed">
+    <div class="content_width_no_borders centered relative">
+        <div class="absolute" style="z-index:5000;right:10px;top:10px;cursor:pointer;">
+            <img src="https://d1v6x81qdeozhc.cloudfront.net/static/assets/gray_x_button-ccaa177ec0ecf8935fb04b2fea5612f7.gif" onclick="venmo.message.hide();return false;">
+        </div>
+        <div id="js_messaging_message" class="rounded5 bold align_center p_flash ">
+            <div id="api_messages"></div>
+        </div>
+
+    </div>
+</div>
+
+
+    <div class="goog-hovercard" id="profileCard" style="display:none; position:absolute">
+        <!--<img class="hover_card_arrow" src="https://d1v6x81qdeozhc.cloudfront.net/static/images/icons/top-arrow-3c6a250a0f18b8fbea1626e3dfad9990.png" />-->
+        <div class="hover_card">
+            <span class="small" id="personDetails">&nbsp;</span>
+        </div>
+    </div>
+    
+      
+        <div id="header">
+      
+            
+            <div class="wmt900">
+            
+                <div id="headerContent fade_first">
+                    <div class="float_left"><a href="/"><img src="https://d1v6x81qdeozhc.cloudfront.net/static/assets/venmo-logo-medium-6-bd75443e979a541fea387bc6040e0af1.png" width="120" height="47" alt="Venmo" style="padding-left:3px;"></a></div>
+
+                    
+    <div class="float_left" style="padding-left: 12px;">
+        
+        
+            <div class="float_left">
+                <form method="GET" action="/search">
+                    <input id="searchbox" value="Search people" name="q" autocomplete="off" class="light_gray" aria-haspopup="true">
+                    </form>
+            </div>
+            
+        
+            <div class="p_seven_l float_left smaller">
+                <a class="hLink" href="/">Home</a>
+            </div>
+        
+    </div>
+
+    <div class="float_right smaller">
+      
+          <div>
+	    
+	      <a class="hLink" href="/julian-weiss-4">julian weiss</a>
+            
+              <a class="hLink" href="/account/statement/">Statement</a>
+              <a class="hLink" href="/account/settings/">Settings</a>
+              <a class="hLink" href="https://help.venmo.com">Help</a>
+              <a class="hLink" href="/account/logout">Log out</a>
+          </div>
+
+      
+    </div>
+
+
+
+
+                        
+
+                    <div class="clear"></div>
+                </div>
+            </div>
+        </div>
+
+        
+            <div id="left_and_right" class="wmt900">
+
+            <div class="float_left content_width_no_borders">
+                <div class="m_twenty_t"></div>
+                <div class="
+                                rectBox
+                            ">
+            
+    
+
+<!-- DYNAMIC STUFF -->
+
+
+            <div class="float_left">
+               
+                   <img width="100" height="100" class="sq100  m_ten_f " onerror="this.src='https://s3.amazonaws.com/venmo/no-image.gif';" src="https://venmopics.appspot.com/u/v1/m/81a21320-00dc-48da-8925-ee4482b8f3e0" longdesc="https://venmopics.appspot.com/u/v1/m/81a21320-00dc-48da-8925-ee4482b8f3e0" title="Nicole Harris (slycecoffee)">
+               
+            </div>
+            <div class="width450 p_ten_t float_left">
+                <div class="large">
+                    <span class="bold">Nicole Harris</span>  <span>(slycecoffee)</span> 
+                </div>
+                <div class="m_five_t">
+                    Member since: March 2018
+                </div>
+                <div class="small" id="">
+                    
+                        
+                    
+                </div>
+
+                <div class="m_five_t m_ten_b">
+                    
+                        
+                    
+                </div>
+
+
+            </div>
+            <div class="clear"></div>
+
+<!-- close and reopen from header -->
+</div><div class="m_twenty_b width632 gray_box_bbb">
+
+    <div style="background-color: #fff; padding: 20px 45px; text-align: center;">
+    <h2 style="font-size: 18px; padding: 0 0 15px 0;">
+        Pay and charge functionality is available in the Venmo app.
+    </h2>
+    <p style="color: #666; font-size: 14px; line-height: 18px;">
+        If you want to pay and charge, and don’t have the Venmo app, get it from the
+        <a href="https://itunes.apple.com/us/app/venmo/id351727428?mt=8" rel="noopener noreferrer" target="_blank">App Store</a>
+        or
+        <a href="https://play.google.com/store/apps/details?id=com.venmo" rel="noopener noreferrer" target="_blank">Google Play</a>.
+        You can still use <a href="/">Venmo.com</a> to transfer money to your bank, see statements, update your
+        profile, and more.
+
+    </p>
+</div>
+
+
+
+
+    </div><div class="rectBox"><!-- close and reopen from header -->
+
+        
+        <div style="padding:20px" class="pill p_thirty_f links_ten_apart gray_bottom_divider white_background">
+            <a id="profile_feed_button" class="bold black align_center pActive" href="#" onclick="venmo.feed.selectProfileTab('profile_feed'); return false;"><span>Feed</span></a>
+            <span>&nbsp; </span>
+            <a id="between_feed_button" class=" align_center" href="#" onclick="venmo.feed.selectProfileTab('between_feed'); return false;">Between You &amp; Nicole</a>
+        </div>
+        
+        <!-- PROFILE FEED -->
+        <div class="m_ten_b white_background" id="profile_feed_container" style="display:;">
+            <div id="profile_feed_no_stories" style="display:none;" class="p_twenty_f">
+
+                
+                  
+                  <p>Nicole has not shared any payments publicly.</p>
+                  
+                
+
+            </div>
+            <div id="5af5a4a45a877f6e3868a657__profile_feed_story" rel="2018-05-11T14:11:48Z" class="profile_feed_story gray_bottom_divider p_twenty_l p_twenty_r" story_id="5af5a4a45a877f6e3868a657">
+        <div class="p_ten_t">
+            <table width="100%">
+                <tbody><tr>
+                    <td class="align_top p_ten_b" width="52px">
+                        <div class="relative">
+                                                            <a href="/aturkelson" title="Adam Turkelson" class="bold">
+                                    <img onerror="this.src='https://s3.amazonaws.com/venmo/no-image.gif';" class="sq48 pics_diag_tl" src="https://s3.amazonaws.com/venmo/no-image.gif" longdesc="https://s3.amazonaws.com/venmo/no-image.gif">
+                                </a>
+                                <a href="/aturkelson" title="Adam Turkelson">
+                                        <!--<span class="mask48"></span>-->
+                                </a>
+                            </div>
+                    </td>
+                    <td class="align_top p_ten_l p_ten_b">
+                        <div class="width350">
+                            <div class="m_five_t p_ten_r" data-story-class="profile_feed_story">
+                                                                    <a href="/aturkelson" data-track="feed-username" class="bold">Adam Turkelson</a>
+                                                                                                            paid 
+                                                                                                                                                            <a href="/slycecoffee" data-track="feed-username" class="bold">Nicole Harris</a>
+                                        </div>
+                            <div style="word-wrap:break-word">
+				☕
+			    </div>
+                        </div>
+                        <div id="comments_and_likes" class="width350">
+    <div class="p_five_t p_ten_b small">
+                <span id="like_unlike_link_5af5a4a45a877f6e3868a657">
+            <a href="#" onclick="venmo.story.likeUnlikeStory('like','5af5a4a45a877f6e3868a657','profile_feed_story'); return false;">Like</a>
+        </span>
+        <span> · </span>
+        <a href="/story/5af5a4a45a877f6e3868a657" class="gray_link">Friday at 10:11 AM</a>
+        </div>
+    <div id="like_row_5af5a4a45a877f6e3868a657">
+    
+    </div>
+    <div class="width350 light_gray_background" id="comment_table_5af5a4a45a877f6e3868a657__profile_feed_story">
+        <div id="comment_form_5af5a4a45a877f6e3868a657__profile_feed_story" class="clearfix p_five_f white_box light_gray_background">
+            <div class="align_top float_left p_five_t p_five_b sq24">
+                <img onerror="this.src='https://s3.amazonaws.com/venmo/no-image.gif';" class="sq24" src="https://venmopics.appspot.com/u/v1/m/cda01776-53e3-4510-b525-5f92170f1c07" longdesc="https://venmopics.appspot.com/u/v1/m/cda01776-53e3-4510-b525-5f92170f1c07">
+            </div>
+            <div class="float_left align_top p_five_t p_five_b p_seven_l p_ten_b">
+                <form accept-charset="utf-8">
+                <input type="text" id="comment_text_5af5a4a45a877f6e3868a657__profile_feed_story" class="commentInput" style="height:20px; width:250px;" placeholder="Leave a comment...">
+                <input type="submit" onclick="venmo.story.postComment('5af5a4a45a877f6e3868a657', 'profile_feed_story'); return false;" id="comment_submit_5af5a4a45a877f6e3868a657__profile_feed_story" tabindex="-1" style="border: 0 none; height: 0; width: 0; padding: 0; margin: 0; overflow: hidden;">
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+                        
+                    </td> 
+                    <td class="align_top p_five_t align_right">
+                        </td>
+                </tr>
+            </tbody></table>
+        </div>
+    </div><div id="5af312455a877f6e38bbe371__profile_feed_story" rel="2018-05-09T15:22:45Z" class="profile_feed_story gray_bottom_divider p_twenty_l p_twenty_r" story_id="5af312455a877f6e38bbe371">
+        <div class="p_ten_t">
+            <table width="100%">
+                <tbody><tr>
+                    <td class="align_top p_ten_b" width="52px">
+                        <div class="relative">
+                                                            <a href="/aturkelson" title="Adam Turkelson" class="bold">
+                                    <img onerror="this.src='https://s3.amazonaws.com/venmo/no-image.gif';" class="sq48 pics_diag_tl" src="https://s3.amazonaws.com/venmo/no-image.gif" longdesc="https://s3.amazonaws.com/venmo/no-image.gif">
+                                </a>
+                                <a href="/aturkelson" title="Adam Turkelson">
+                                        <!--<span class="mask48"></span>-->
+                                </a>
+                            </div>
+                    </td>
+                    <td class="align_top p_ten_l p_ten_b">
+                        <div class="width350">
+                            <div class="m_five_t p_ten_r" data-story-class="profile_feed_story">
+                                                                    <a href="/aturkelson" data-track="feed-username" class="bold">Adam Turkelson</a>
+                                                                                                            paid 
+                                                                                                                                                            <a href="/slycecoffee" data-track="feed-username" class="bold">Nicole Harris</a>
+                                        </div>
+                            <div style="word-wrap:break-word">
+				☕
+			    </div>
+                        </div>
+                        <div id="comments_and_likes" class="width350">
+    <div class="p_five_t p_ten_b small">
+                <span id="like_unlike_link_5af312455a877f6e38bbe371">
+            <a href="#" onclick="venmo.story.likeUnlikeStory('like','5af312455a877f6e38bbe371','profile_feed_story'); return false;">Like</a>
+        </span>
+        <span> · </span>
+        <a href="/story/5af312455a877f6e38bbe371" class="gray_link">May 9</a>
+        </div>
+    <div id="like_row_5af312455a877f6e38bbe371">
+    
+    </div>
+    <div class="width350 light_gray_background" id="comment_table_5af312455a877f6e38bbe371__profile_feed_story">
+        <div id="comment_form_5af312455a877f6e38bbe371__profile_feed_story" class="clearfix p_five_f white_box light_gray_background">
+            <div class="align_top float_left p_five_t p_five_b sq24">
+                <img onerror="this.src='https://s3.amazonaws.com/venmo/no-image.gif';" class="sq24" src="https://venmopics.appspot.com/u/v1/m/cda01776-53e3-4510-b525-5f92170f1c07" longdesc="https://venmopics.appspot.com/u/v1/m/cda01776-53e3-4510-b525-5f92170f1c07">
+            </div>
+            <div class="float_left align_top p_five_t p_five_b p_seven_l p_ten_b">
+                <form accept-charset="utf-8">
+                <input type="text" id="comment_text_5af312455a877f6e38bbe371__profile_feed_story" class="commentInput" style="height:20px; width:250px;" placeholder="Leave a comment...">
+                <input type="submit" onclick="venmo.story.postComment('5af312455a877f6e38bbe371', 'profile_feed_story'); return false;" id="comment_submit_5af312455a877f6e38bbe371__profile_feed_story" tabindex="-1" style="border: 0 none; height: 0; width: 0; padding: 0; margin: 0; overflow: hidden;">
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+                        
+                    </td> 
+                    <td class="align_top p_five_t align_right">
+                        </td>
+                </tr>
+            </tbody></table>
+        </div>
+    </div><div id="5af1f90e5a877f6e3837290e__profile_feed_story" rel="2018-05-08T19:22:54Z" class="profile_feed_story gray_bottom_divider p_twenty_l p_twenty_r" story_id="5af1f90e5a877f6e3837290e">
+        <div class="p_ten_t">
+            <table width="100%">
+                <tbody><tr>
+                    <td class="align_top p_ten_b" width="52px">
+                        <div class="relative">
+                                                            <a href="/sydfink" title="Sydney Fink" class="bold">
+                                    <img onerror="this.src='https://s3.amazonaws.com/venmo/no-image.gif';" class="sq48 pics_diag_tl" src="https://venmopics.appspot.com/u/v1/m/2f4741da-9deb-4e48-9718-1c2465a40305" longdesc="https://venmopics.appspot.com/u/v1/m/2f4741da-9deb-4e48-9718-1c2465a40305">
+                                </a>
+                                <a href="/sydfink" title="Sydney Fink">
+                                        <!--<span class="mask48"></span>-->
+                                </a>
+                            </div>
+                    </td>
+                    <td class="align_top p_ten_l p_ten_b">
+                        <div class="width350">
+                            <div class="m_five_t p_ten_r" data-story-class="profile_feed_story">
+                                                                    <a href="/sydfink" data-track="feed-username" class="bold">Sydney Fink</a>
+                                                                                                            paid 
+                                                                                                                                                            <a href="/slycecoffee" data-track="feed-username" class="bold">Nicole Harris</a>
+                                        </div>
+                            <div style="word-wrap:break-word">
+				☕
+			    </div>
+                        </div>
+                        <div id="comments_and_likes" class="width350">
+    <div class="p_five_t p_ten_b small">
+                <span id="like_unlike_link_5af1f90e5a877f6e3837290e">
+            <a href="#" onclick="venmo.story.likeUnlikeStory('like','5af1f90e5a877f6e3837290e','profile_feed_story'); return false;">Like</a>
+        </span>
+        <span> · </span>
+        <a href="/story/5af1f90e5a877f6e3837290e" class="gray_link">May 8</a>
+        </div>
+    <div id="like_row_5af1f90e5a877f6e3837290e">
+    
+<div class="light_gray_background white_box p_five_f">
+<span style="font-size:16px;color:#E47297;">♥</span> 
+                         <a href="/slycecoffee">Nicole Harris</a> likes this.
+        </div>
+    </div>
+    <div class="width350 light_gray_background" id="comment_table_5af1f90e5a877f6e3837290e__profile_feed_story">
+        <div id="comment_form_5af1f90e5a877f6e3837290e__profile_feed_story" class="clearfix p_five_f white_box light_gray_background">
+            <div class="align_top float_left p_five_t p_five_b sq24">
+                <img onerror="this.src='https://s3.amazonaws.com/venmo/no-image.gif';" class="sq24" src="https://venmopics.appspot.com/u/v1/m/cda01776-53e3-4510-b525-5f92170f1c07" longdesc="https://venmopics.appspot.com/u/v1/m/cda01776-53e3-4510-b525-5f92170f1c07">
+            </div>
+            <div class="float_left align_top p_five_t p_five_b p_seven_l p_ten_b">
+                <form accept-charset="utf-8">
+                <input type="text" id="comment_text_5af1f90e5a877f6e3837290e__profile_feed_story" class="commentInput" style="height:20px; width:250px;" placeholder="Leave a comment...">
+                <input type="submit" onclick="venmo.story.postComment('5af1f90e5a877f6e3837290e', 'profile_feed_story'); return false;" id="comment_submit_5af1f90e5a877f6e3837290e__profile_feed_story" tabindex="-1" style="border: 0 none; height: 0; width: 0; padding: 0; margin: 0; overflow: hidden;">
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+                        
+                    </td> 
+                    <td class="align_top p_five_t align_right">
+                        </td>
+                </tr>
+            </tbody></table>
+        </div>
+    </div><div id="5ae880295a877f6e38bc2648__profile_feed_story" rel="2018-05-01T14:56:41Z" class="profile_feed_story gray_bottom_divider p_twenty_l p_twenty_r" story_id="5ae880295a877f6e38bc2648">
+        <div class="p_ten_t">
+            <table width="100%">
+                <tbody><tr>
+                    <td class="align_top p_ten_b" width="52px">
+                        <div class="relative">
+                                                            <a href="/aturkelson" title="Adam Turkelson" class="bold">
+                                    <img onerror="this.src='https://s3.amazonaws.com/venmo/no-image.gif';" class="sq48 pics_diag_tl" src="https://s3.amazonaws.com/venmo/no-image.gif" longdesc="https://s3.amazonaws.com/venmo/no-image.gif">
+                                </a>
+                                <a href="/aturkelson" title="Adam Turkelson">
+                                        <!--<span class="mask48"></span>-->
+                                </a>
+                            </div>
+                    </td>
+                    <td class="align_top p_ten_l p_ten_b">
+                        <div class="width350">
+                            <div class="m_five_t p_ten_r" data-story-class="profile_feed_story">
+                                                                    <a href="/aturkelson" data-track="feed-username" class="bold">Adam Turkelson</a>
+                                                                                                            paid 
+                                                                                                                                                            <a href="/slycecoffee" data-track="feed-username" class="bold">Nicole Harris</a>
+                                        </div>
+                            <div style="word-wrap:break-word">
+				☕
+			    </div>
+                        </div>
+                        <div id="comments_and_likes" class="width350">
+    <div class="p_five_t p_ten_b small">
+                <span id="like_unlike_link_5ae880295a877f6e38bc2648">
+            <a href="#" onclick="venmo.story.likeUnlikeStory('like','5ae880295a877f6e38bc2648','profile_feed_story'); return false;">Like</a>
+        </span>
+        <span> · </span>
+        <a href="/story/5ae880295a877f6e38bc2648" class="gray_link">May 1</a>
+        </div>
+    <div id="like_row_5ae880295a877f6e38bc2648">
+    
+    </div>
+    <div class="width350 light_gray_background" id="comment_table_5ae880295a877f6e38bc2648__profile_feed_story">
+        <div id="comment_form_5ae880295a877f6e38bc2648__profile_feed_story" class="clearfix p_five_f white_box light_gray_background">
+            <div class="align_top float_left p_five_t p_five_b sq24">
+                <img onerror="this.src='https://s3.amazonaws.com/venmo/no-image.gif';" class="sq24" src="https://venmopics.appspot.com/u/v1/m/cda01776-53e3-4510-b525-5f92170f1c07" longdesc="https://venmopics.appspot.com/u/v1/m/cda01776-53e3-4510-b525-5f92170f1c07">
+            </div>
+            <div class="float_left align_top p_five_t p_five_b p_seven_l p_ten_b">
+                <form accept-charset="utf-8">
+                <input type="text" id="comment_text_5ae880295a877f6e38bc2648__profile_feed_story" class="commentInput" style="height:20px; width:250px;" placeholder="Leave a comment...">
+                <input type="submit" onclick="venmo.story.postComment('5ae880295a877f6e38bc2648', 'profile_feed_story'); return false;" id="comment_submit_5ae880295a877f6e38bc2648__profile_feed_story" tabindex="-1" style="border: 0 none; height: 0; width: 0; padding: 0; margin: 0; overflow: hidden;">
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+                        
+                    </td> 
+                    <td class="align_top p_five_t align_right">
+                        </td>
+                </tr>
+            </tbody></table>
+        </div>
+    </div><div id="5ae32ffa5a877f6e38424444__profile_feed_story" rel="2018-04-27T14:13:14Z" class="profile_feed_story gray_bottom_divider p_twenty_l p_twenty_r" story_id="5ae32ffa5a877f6e38424444">
+        <div class="p_ten_t">
+            <table width="100%">
+                <tbody><tr>
+                    <td class="align_top p_ten_b" width="52px">
+                        <div class="relative">
+                                                            <a href="/aturkelson" title="Adam Turkelson" class="bold">
+                                    <img onerror="this.src='https://s3.amazonaws.com/venmo/no-image.gif';" class="sq48 pics_diag_tl" src="https://s3.amazonaws.com/venmo/no-image.gif" longdesc="https://s3.amazonaws.com/venmo/no-image.gif">
+                                </a>
+                                <a href="/aturkelson" title="Adam Turkelson">
+                                        <!--<span class="mask48"></span>-->
+                                </a>
+                            </div>
+                    </td>
+                    <td class="align_top p_ten_l p_ten_b">
+                        <div class="width350">
+                            <div class="m_five_t p_ten_r" data-story-class="profile_feed_story">
+                                                                    <a href="/aturkelson" data-track="feed-username" class="bold">Adam Turkelson</a>
+                                                                                                            paid 
+                                                                                                                                                            <a href="/slycecoffee" data-track="feed-username" class="bold">Nicole Harris</a>
+                                        </div>
+                            <div style="word-wrap:break-word">
+				☕
+			    </div>
+                        </div>
+                        <div id="comments_and_likes" class="width350">
+    <div class="p_five_t p_ten_b small">
+                <span id="like_unlike_link_5ae32ffa5a877f6e38424444">
+            <a href="#" onclick="venmo.story.likeUnlikeStory('like','5ae32ffa5a877f6e38424444','profile_feed_story'); return false;">Like</a>
+        </span>
+        <span> · </span>
+        <a href="/story/5ae32ffa5a877f6e38424444" class="gray_link">April 27</a>
+        </div>
+    <div id="like_row_5ae32ffa5a877f6e38424444">
+    
+    </div>
+    <div class="width350 light_gray_background" id="comment_table_5ae32ffa5a877f6e38424444__profile_feed_story">
+        <div id="comment_form_5ae32ffa5a877f6e38424444__profile_feed_story" class="clearfix p_five_f white_box light_gray_background">
+            <div class="align_top float_left p_five_t p_five_b sq24">
+                <img onerror="this.src='https://s3.amazonaws.com/venmo/no-image.gif';" class="sq24" src="https://venmopics.appspot.com/u/v1/m/cda01776-53e3-4510-b525-5f92170f1c07" longdesc="https://venmopics.appspot.com/u/v1/m/cda01776-53e3-4510-b525-5f92170f1c07">
+            </div>
+            <div class="float_left align_top p_five_t p_five_b p_seven_l p_ten_b">
+                <form accept-charset="utf-8">
+                <input type="text" id="comment_text_5ae32ffa5a877f6e38424444__profile_feed_story" class="commentInput" style="height:20px; width:250px;" placeholder="Leave a comment...">
+                <input type="submit" onclick="venmo.story.postComment('5ae32ffa5a877f6e38424444', 'profile_feed_story'); return false;" id="comment_submit_5ae32ffa5a877f6e38424444__profile_feed_story" tabindex="-1" style="border: 0 none; height: 0; width: 0; padding: 0; margin: 0; overflow: hidden;">
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+                        
+                    </td> 
+                    <td class="align_top p_five_t align_right">
+                        </td>
+                </tr>
+            </tbody></table>
+        </div>
+    </div><div id="5adf7f765a877f6e382b6471__profile_feed_story" rel="2018-04-24T19:03:18Z" class="profile_feed_story gray_bottom_divider p_twenty_l p_twenty_r" story_id="5adf7f765a877f6e382b6471">
+        <div class="p_ten_t">
+            <table width="100%">
+                <tbody><tr>
+                    <td class="align_top p_ten_b" width="52px">
+                        <div class="relative">
+                                                            <a href="/insanj" title="Julian Weiss" class="bold">
+                                    <img onerror="this.src='https://s3.amazonaws.com/venmo/no-image.gif';" class="sq48 pics_diag_tl" src="https://venmopics.appspot.com/u/v5/n/4573e51f-1287-482d-bfd8-9ae517c8c54a" longdesc="https://venmopics.appspot.com/u/v5/n/4573e51f-1287-482d-bfd8-9ae517c8c54a">
+                                </a>
+                                <a href="/insanj" title="Julian Weiss">
+                                        <!--<span class="mask48"></span>-->
+                                </a>
+                            </div>
+                    </td>
+                    <td class="align_top p_ten_l p_ten_b">
+                        <div class="width350">
+                            <div class="m_five_t p_ten_r" data-story-class="profile_feed_story">
+                                                                    <a href="/insanj" data-track="feed-username" class="bold">Julian Weiss</a>
+                                                                                                            paid 
+                                                                                                                                                            <a href="/slycecoffee" data-track="feed-username" class="bold">Nicole Harris</a>
+                                        </div>
+                            <div style="word-wrap:break-word">
+				❤️ lovin the quality AND the quantity now a days
+			    </div>
+                        </div>
+                        <div id="comments_and_likes" class="width350">
+    <div class="p_five_t p_ten_b small">
+                <span id="like_unlike_link_5adf7f765a877f6e382b6471">
+            <a href="#" onclick="venmo.story.likeUnlikeStory('like','5adf7f765a877f6e382b6471','profile_feed_story'); return false;">Like</a>
+        </span>
+        <span> · </span>
+        <a href="/story/5adf7f765a877f6e382b6471" class="gray_link">April 24</a>
+        </div>
+    <div id="like_row_5adf7f765a877f6e382b6471">
+    
+    </div>
+    <div class="width350 light_gray_background" id="comment_table_5adf7f765a877f6e382b6471__profile_feed_story">
+        <div id="comment_form_5adf7f765a877f6e382b6471__profile_feed_story" class="clearfix p_five_f white_box light_gray_background">
+            <div class="align_top float_left p_five_t p_five_b sq24">
+                <img onerror="this.src='https://s3.amazonaws.com/venmo/no-image.gif';" class="sq24" src="https://venmopics.appspot.com/u/v1/m/cda01776-53e3-4510-b525-5f92170f1c07" longdesc="https://venmopics.appspot.com/u/v1/m/cda01776-53e3-4510-b525-5f92170f1c07">
+            </div>
+            <div class="float_left align_top p_five_t p_five_b p_seven_l p_ten_b">
+                <form accept-charset="utf-8">
+                <input type="text" id="comment_text_5adf7f765a877f6e382b6471__profile_feed_story" class="commentInput" style="height:20px; width:250px;" placeholder="Leave a comment...">
+                <input type="submit" onclick="venmo.story.postComment('5adf7f765a877f6e382b6471', 'profile_feed_story'); return false;" id="comment_submit_5adf7f765a877f6e382b6471__profile_feed_story" tabindex="-1" style="border: 0 none; height: 0; width: 0; padding: 0; margin: 0; overflow: hidden;">
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+                        
+                    </td> 
+                    <td class="align_top p_five_t align_right">
+                        </td>
+                </tr>
+            </tbody></table>
+        </div>
+    </div><div id="5ad755145a877f6e3888e182__profile_feed_story" rel="2018-04-18T14:24:20Z" class="profile_feed_story gray_bottom_divider p_twenty_l p_twenty_r" story_id="5ad755145a877f6e3888e182">
+        <div class="p_ten_t">
+            <table width="100%">
+                <tbody><tr>
+                    <td class="align_top p_ten_b" width="52px">
+                        <div class="relative">
+                                                            <a href="/aturkelson" title="Adam Turkelson" class="bold">
+                                    <img onerror="this.src='https://s3.amazonaws.com/venmo/no-image.gif';" class="sq48 pics_diag_tl" src="https://s3.amazonaws.com/venmo/no-image.gif" longdesc="https://s3.amazonaws.com/venmo/no-image.gif">
+                                </a>
+                                <a href="/aturkelson" title="Adam Turkelson">
+                                        <!--<span class="mask48"></span>-->
+                                </a>
+                            </div>
+                    </td>
+                    <td class="align_top p_ten_l p_ten_b">
+                        <div class="width350">
+                            <div class="m_five_t p_ten_r" data-story-class="profile_feed_story">
+                                                                    <a href="/aturkelson" data-track="feed-username" class="bold">Adam Turkelson</a>
+                                                                                                            paid 
+                                                                                                                                                            <a href="/slycecoffee" data-track="feed-username" class="bold">Nicole Harris</a>
+                                        </div>
+                            <div style="word-wrap:break-word">
+				☕
+			    </div>
+                        </div>
+                        <div id="comments_and_likes" class="width350">
+    <div class="p_five_t p_ten_b small">
+                <span id="like_unlike_link_5ad755145a877f6e3888e182">
+            <a href="#" onclick="venmo.story.likeUnlikeStory('like','5ad755145a877f6e3888e182','profile_feed_story'); return false;">Like</a>
+        </span>
+        <span> · </span>
+        <a href="/story/5ad755145a877f6e3888e182" class="gray_link">April 18</a>
+        </div>
+    <div id="like_row_5ad755145a877f6e3888e182">
+    
+    </div>
+    <div class="width350 light_gray_background" id="comment_table_5ad755145a877f6e3888e182__profile_feed_story">
+        <div id="comment_form_5ad755145a877f6e3888e182__profile_feed_story" class="clearfix p_five_f white_box light_gray_background">
+            <div class="align_top float_left p_five_t p_five_b sq24">
+                <img onerror="this.src='https://s3.amazonaws.com/venmo/no-image.gif';" class="sq24" src="https://venmopics.appspot.com/u/v1/m/cda01776-53e3-4510-b525-5f92170f1c07" longdesc="https://venmopics.appspot.com/u/v1/m/cda01776-53e3-4510-b525-5f92170f1c07">
+            </div>
+            <div class="float_left align_top p_five_t p_five_b p_seven_l p_ten_b">
+                <form accept-charset="utf-8">
+                <input type="text" id="comment_text_5ad755145a877f6e3888e182__profile_feed_story" class="commentInput" style="height:20px; width:250px;" placeholder="Leave a comment...">
+                <input type="submit" onclick="venmo.story.postComment('5ad755145a877f6e3888e182', 'profile_feed_story'); return false;" id="comment_submit_5ad755145a877f6e3888e182__profile_feed_story" tabindex="-1" style="border: 0 none; height: 0; width: 0; padding: 0; margin: 0; overflow: hidden;">
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+                        
+                    </td> 
+                    <td class="align_top p_five_t align_right">
+                        </td>
+                </tr>
+            </tbody></table>
+        </div>
+    </div><div id="5ad63c325a877f6e3853de62__profile_feed_story" rel="2018-04-17T18:25:54Z" class="profile_feed_story gray_bottom_divider p_twenty_l p_twenty_r" story_id="5ad63c325a877f6e3853de62">
+        <div class="p_ten_t">
+            <table width="100%">
+                <tbody><tr>
+                    <td class="align_top p_ten_b" width="52px">
+                        <div class="relative">
+                                                            <a href="/insanj" title="Julian Weiss" class="bold">
+                                    <img onerror="this.src='https://s3.amazonaws.com/venmo/no-image.gif';" class="sq48 pics_diag_tl" src="https://venmopics.appspot.com/u/v5/n/4573e51f-1287-482d-bfd8-9ae517c8c54a" longdesc="https://venmopics.appspot.com/u/v5/n/4573e51f-1287-482d-bfd8-9ae517c8c54a">
+                                </a>
+                                <a href="/insanj" title="Julian Weiss">
+                                        <!--<span class="mask48"></span>-->
+                                </a>
+                            </div>
+                    </td>
+                    <td class="align_top p_ten_l p_ten_b">
+                        <div class="width350">
+                            <div class="m_five_t p_ten_r" data-story-class="profile_feed_story">
+                                                                    <a href="/insanj" data-track="feed-username" class="bold">Julian Weiss</a>
+                                                                                                            paid 
+                                                                                                                                                            <a href="/slycecoffee" data-track="feed-username" class="bold">Nicole Harris</a>
+                                        </div>
+                            <div style="word-wrap:break-word">
+				😎 Nespresso all day! my favorite flavor so far is the Giornio, bright orange
+			    </div>
+                        </div>
+                        <div id="comments_and_likes" class="width350">
+    <div class="p_five_t p_ten_b small">
+                <span id="like_unlike_link_5ad63c325a877f6e3853de62">
+            <a href="#" onclick="venmo.story.likeUnlikeStory('like','5ad63c325a877f6e3853de62','profile_feed_story'); return false;">Like</a>
+        </span>
+        <span> · </span>
+        <a href="/story/5ad63c325a877f6e3853de62" class="gray_link">April 17</a>
+        </div>
+    <div id="like_row_5ad63c325a877f6e3853de62">
+    
+<div class="light_gray_background white_box p_five_f">
+<span style="font-size:16px;color:#E47297;">♥</span> 
+                         <a href="/slycecoffee">Nicole Harris</a> likes this.
+        </div>
+    </div>
+    <div class="width350 light_gray_background" id="comment_table_5ad63c325a877f6e3853de62__profile_feed_story">
+        <div id="comment_form_5ad63c325a877f6e3853de62__profile_feed_story" class="clearfix p_five_f white_box light_gray_background">
+            <div class="align_top float_left p_five_t p_five_b sq24">
+                <img onerror="this.src='https://s3.amazonaws.com/venmo/no-image.gif';" class="sq24" src="https://venmopics.appspot.com/u/v1/m/cda01776-53e3-4510-b525-5f92170f1c07" longdesc="https://venmopics.appspot.com/u/v1/m/cda01776-53e3-4510-b525-5f92170f1c07">
+            </div>
+            <div class="float_left align_top p_five_t p_five_b p_seven_l p_ten_b">
+                <form accept-charset="utf-8">
+                <input type="text" id="comment_text_5ad63c325a877f6e3853de62__profile_feed_story" class="commentInput" style="height:20px; width:250px;" placeholder="Leave a comment...">
+                <input type="submit" onclick="venmo.story.postComment('5ad63c325a877f6e3853de62', 'profile_feed_story'); return false;" id="comment_submit_5ad63c325a877f6e3853de62__profile_feed_story" tabindex="-1" style="border: 0 none; height: 0; width: 0; padding: 0; margin: 0; overflow: hidden;">
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+                        
+                    </td> 
+                    <td class="align_top p_five_t align_right">
+                        </td>
+                </tr>
+            </tbody></table>
+        </div>
+    </div><div id="5ad5fc8e5a877f6e38aa0019__profile_feed_story" rel="2018-04-17T13:54:22Z" class="profile_feed_story gray_bottom_divider p_twenty_l p_twenty_r" story_id="5ad5fc8e5a877f6e38aa0019">
+        <div class="p_ten_t">
+            <table width="100%">
+                <tbody><tr>
+                    <td class="align_top p_ten_b" width="52px">
+                        <div class="relative">
+                                                            <a href="/aturkelson" title="Adam Turkelson" class="bold">
+                                    <img onerror="this.src='https://s3.amazonaws.com/venmo/no-image.gif';" class="sq48 pics_diag_tl" src="https://s3.amazonaws.com/venmo/no-image.gif" longdesc="https://s3.amazonaws.com/venmo/no-image.gif">
+                                </a>
+                                <a href="/aturkelson" title="Adam Turkelson">
+                                        <!--<span class="mask48"></span>-->
+                                </a>
+                            </div>
+                    </td>
+                    <td class="align_top p_ten_l p_ten_b">
+                        <div class="width350">
+                            <div class="m_five_t p_ten_r" data-story-class="profile_feed_story">
+                                                                    <a href="/aturkelson" data-track="feed-username" class="bold">Adam Turkelson</a>
+                                                                                                            paid 
+                                                                                                                                                            <a href="/slycecoffee" data-track="feed-username" class="bold">Nicole Harris</a>
+                                        </div>
+                            <div style="word-wrap:break-word">
+				☕
+			    </div>
+                        </div>
+                        <div id="comments_and_likes" class="width350">
+    <div class="p_five_t p_ten_b small">
+                <span id="like_unlike_link_5ad5fc8e5a877f6e38aa0019">
+            <a href="#" onclick="venmo.story.likeUnlikeStory('like','5ad5fc8e5a877f6e38aa0019','profile_feed_story'); return false;">Like</a>
+        </span>
+        <span> · </span>
+        <a href="/story/5ad5fc8e5a877f6e38aa0019" class="gray_link">April 17</a>
+        </div>
+    <div id="like_row_5ad5fc8e5a877f6e38aa0019">
+    
+    </div>
+    <div class="width350 light_gray_background" id="comment_table_5ad5fc8e5a877f6e38aa0019__profile_feed_story">
+        <div id="comment_form_5ad5fc8e5a877f6e38aa0019__profile_feed_story" class="clearfix p_five_f white_box light_gray_background">
+            <div class="align_top float_left p_five_t p_five_b sq24">
+                <img onerror="this.src='https://s3.amazonaws.com/venmo/no-image.gif';" class="sq24" src="https://venmopics.appspot.com/u/v1/m/cda01776-53e3-4510-b525-5f92170f1c07" longdesc="https://venmopics.appspot.com/u/v1/m/cda01776-53e3-4510-b525-5f92170f1c07">
+            </div>
+            <div class="float_left align_top p_five_t p_five_b p_seven_l p_ten_b">
+                <form accept-charset="utf-8">
+                <input type="text" id="comment_text_5ad5fc8e5a877f6e38aa0019__profile_feed_story" class="commentInput" style="height:20px; width:250px;" placeholder="Leave a comment...">
+                <input type="submit" onclick="venmo.story.postComment('5ad5fc8e5a877f6e38aa0019', 'profile_feed_story'); return false;" id="comment_submit_5ad5fc8e5a877f6e38aa0019__profile_feed_story" tabindex="-1" style="border: 0 none; height: 0; width: 0; padding: 0; margin: 0; overflow: hidden;">
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+                        
+                    </td> 
+                    <td class="align_top p_five_t align_right">
+                        </td>
+                </tr>
+            </tbody></table>
+        </div>
+    </div><div id="5acb70465a877f6e380a2cf9__profile_feed_story" rel="2018-04-09T13:53:10Z" class="profile_feed_story gray_bottom_divider p_twenty_l p_twenty_r" story_id="5acb70465a877f6e380a2cf9">
+        <div class="p_ten_t">
+            <table width="100%">
+                <tbody><tr>
+                    <td class="align_top p_ten_b" width="52px">
+                        <div class="relative">
+                                                            <a href="/aturkelson" title="Adam Turkelson" class="bold">
+                                    <img onerror="this.src='https://s3.amazonaws.com/venmo/no-image.gif';" class="sq48 pics_diag_tl" src="https://s3.amazonaws.com/venmo/no-image.gif" longdesc="https://s3.amazonaws.com/venmo/no-image.gif">
+                                </a>
+                                <a href="/aturkelson" title="Adam Turkelson">
+                                        <!--<span class="mask48"></span>-->
+                                </a>
+                            </div>
+                    </td>
+                    <td class="align_top p_ten_l p_ten_b">
+                        <div class="width350">
+                            <div class="m_five_t p_ten_r" data-story-class="profile_feed_story">
+                                                                    <a href="/aturkelson" data-track="feed-username" class="bold">Adam Turkelson</a>
+                                                                                                            paid 
+                                                                                                                                                            <a href="/slycecoffee" data-track="feed-username" class="bold">Nicole Harris</a>
+                                        </div>
+                            <div style="word-wrap:break-word">
+				☕
+			    </div>
+                        </div>
+                        <div id="comments_and_likes" class="width350">
+    <div class="p_five_t p_ten_b small">
+                <span id="like_unlike_link_5acb70465a877f6e380a2cf9">
+            <a href="#" onclick="venmo.story.likeUnlikeStory('like','5acb70465a877f6e380a2cf9','profile_feed_story'); return false;">Like</a>
+        </span>
+        <span> · </span>
+        <a href="/story/5acb70465a877f6e380a2cf9" class="gray_link">April 9</a>
+        </div>
+    <div id="like_row_5acb70465a877f6e380a2cf9">
+    
+    </div>
+    <div class="width350 light_gray_background" id="comment_table_5acb70465a877f6e380a2cf9__profile_feed_story">
+        <div id="comment_form_5acb70465a877f6e380a2cf9__profile_feed_story" class="clearfix p_five_f white_box light_gray_background">
+            <div class="align_top float_left p_five_t p_five_b sq24">
+                <img onerror="this.src='https://s3.amazonaws.com/venmo/no-image.gif';" class="sq24" src="https://venmopics.appspot.com/u/v1/m/cda01776-53e3-4510-b525-5f92170f1c07" longdesc="https://venmopics.appspot.com/u/v1/m/cda01776-53e3-4510-b525-5f92170f1c07">
+            </div>
+            <div class="float_left align_top p_five_t p_five_b p_seven_l p_ten_b">
+                <form accept-charset="utf-8">
+                <input type="text" id="comment_text_5acb70465a877f6e380a2cf9__profile_feed_story" class="commentInput" style="height:20px; width:250px;" placeholder="Leave a comment...">
+                <input type="submit" onclick="venmo.story.postComment('5acb70465a877f6e380a2cf9', 'profile_feed_story'); return false;" id="comment_submit_5acb70465a877f6e380a2cf9__profile_feed_story" tabindex="-1" style="border: 0 none; height: 0; width: 0; padding: 0; margin: 0; overflow: hidden;">
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+                        
+                    </td> 
+                    <td class="align_top p_five_t align_right">
+                        </td>
+                </tr>
+            </tbody></table>
+        </div>
+    </div><div id="5ac632925a877f6e387697a5__profile_feed_story" rel="2018-04-05T14:28:34Z" class="profile_feed_story gray_bottom_divider p_twenty_l p_twenty_r" story_id="5ac632925a877f6e387697a5">
+        <div class="p_ten_t">
+            <table width="100%">
+                <tbody><tr>
+                    <td class="align_top p_ten_b" width="52px">
+                        <div class="relative">
+                                                            <a href="/aturkelson" title="Adam Turkelson" class="bold">
+                                    <img onerror="this.src='https://s3.amazonaws.com/venmo/no-image.gif';" class="sq48 pics_diag_tl" src="https://s3.amazonaws.com/venmo/no-image.gif" longdesc="https://s3.amazonaws.com/venmo/no-image.gif">
+                                </a>
+                                <a href="/aturkelson" title="Adam Turkelson">
+                                        <!--<span class="mask48"></span>-->
+                                </a>
+                            </div>
+                    </td>
+                    <td class="align_top p_ten_l p_ten_b">
+                        <div class="width350">
+                            <div class="m_five_t p_ten_r" data-story-class="profile_feed_story">
+                                                                    <a href="/aturkelson" data-track="feed-username" class="bold">Adam Turkelson</a>
+                                                                                                            paid 
+                                                                                                                                                            <a href="/slycecoffee" data-track="feed-username" class="bold">Nicole Harris</a>
+                                        </div>
+                            <div style="word-wrap:break-word">
+				☕
+			    </div>
+                        </div>
+                        <div id="comments_and_likes" class="width350">
+    <div class="p_five_t p_ten_b small">
+                <span id="like_unlike_link_5ac632925a877f6e387697a5">
+            <a href="#" onclick="venmo.story.likeUnlikeStory('like','5ac632925a877f6e387697a5','profile_feed_story'); return false;">Like</a>
+        </span>
+        <span> · </span>
+        <a href="/story/5ac632925a877f6e387697a5" class="gray_link">April 5</a>
+        </div>
+    <div id="like_row_5ac632925a877f6e387697a5">
+    
+<div class="light_gray_background white_box p_five_f">
+<span style="font-size:16px;color:#E47297;">♥</span> 
+                         <a href="/slycecoffee">Nicole Harris</a> likes this.
+        </div>
+    </div>
+    <div class="width350 light_gray_background" id="comment_table_5ac632925a877f6e387697a5__profile_feed_story">
+        <div id="comment_form_5ac632925a877f6e387697a5__profile_feed_story" class="clearfix p_five_f white_box light_gray_background">
+            <div class="align_top float_left p_five_t p_five_b sq24">
+                <img onerror="this.src='https://s3.amazonaws.com/venmo/no-image.gif';" class="sq24" src="https://venmopics.appspot.com/u/v1/m/cda01776-53e3-4510-b525-5f92170f1c07" longdesc="https://venmopics.appspot.com/u/v1/m/cda01776-53e3-4510-b525-5f92170f1c07">
+            </div>
+            <div class="float_left align_top p_five_t p_five_b p_seven_l p_ten_b">
+                <form accept-charset="utf-8">
+                <input type="text" id="comment_text_5ac632925a877f6e387697a5__profile_feed_story" class="commentInput" style="height:20px; width:250px;" placeholder="Leave a comment...">
+                <input type="submit" onclick="venmo.story.postComment('5ac632925a877f6e387697a5', 'profile_feed_story'); return false;" id="comment_submit_5ac632925a877f6e387697a5__profile_feed_story" tabindex="-1" style="border: 0 none; height: 0; width: 0; padding: 0; margin: 0; overflow: hidden;">
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+                        
+                    </td> 
+                    <td class="align_top p_five_t align_right">
+                        </td>
+                </tr>
+            </tbody></table>
+        </div>
+    </div><div id="5ac4d5305a877f6e38c6a4e8__profile_feed_story" rel="2018-04-04T13:37:52Z" class="profile_feed_story gray_bottom_divider p_twenty_l p_twenty_r" story_id="5ac4d5305a877f6e38c6a4e8">
+        <div class="p_ten_t">
+            <table width="100%">
+                <tbody><tr>
+                    <td class="align_top p_ten_b" width="52px">
+                        <div class="relative">
+                                                            <a href="/aturkelson" title="Adam Turkelson" class="bold">
+                                    <img onerror="this.src='https://s3.amazonaws.com/venmo/no-image.gif';" class="sq48 pics_diag_tl" src="https://s3.amazonaws.com/venmo/no-image.gif" longdesc="https://s3.amazonaws.com/venmo/no-image.gif">
+                                </a>
+                                <a href="/aturkelson" title="Adam Turkelson">
+                                        <!--<span class="mask48"></span>-->
+                                </a>
+                            </div>
+                    </td>
+                    <td class="align_top p_ten_l p_ten_b">
+                        <div class="width350">
+                            <div class="m_five_t p_ten_r" data-story-class="profile_feed_story">
+                                                                    <a href="/aturkelson" data-track="feed-username" class="bold">Adam Turkelson</a>
+                                                                                                            paid 
+                                                                                                                                                            <a href="/slycecoffee" data-track="feed-username" class="bold">Nicole Harris</a>
+                                        </div>
+                            <div style="word-wrap:break-word">
+				☕
+			    </div>
+                        </div>
+                        <div id="comments_and_likes" class="width350">
+    <div class="p_five_t p_ten_b small">
+                <span id="like_unlike_link_5ac4d5305a877f6e38c6a4e8">
+            <a href="#" onclick="venmo.story.likeUnlikeStory('like','5ac4d5305a877f6e38c6a4e8','profile_feed_story'); return false;">Like</a>
+        </span>
+        <span> · </span>
+        <a href="/story/5ac4d5305a877f6e38c6a4e8" class="gray_link">April 4</a>
+        </div>
+    <div id="like_row_5ac4d5305a877f6e38c6a4e8">
+    
+    </div>
+    <div class="width350 light_gray_background" id="comment_table_5ac4d5305a877f6e38c6a4e8__profile_feed_story">
+        <div id="comment_form_5ac4d5305a877f6e38c6a4e8__profile_feed_story" class="clearfix p_five_f white_box light_gray_background">
+            <div class="align_top float_left p_five_t p_five_b sq24">
+                <img onerror="this.src='https://s3.amazonaws.com/venmo/no-image.gif';" class="sq24" src="https://venmopics.appspot.com/u/v1/m/cda01776-53e3-4510-b525-5f92170f1c07" longdesc="https://venmopics.appspot.com/u/v1/m/cda01776-53e3-4510-b525-5f92170f1c07">
+            </div>
+            <div class="float_left align_top p_five_t p_five_b p_seven_l p_ten_b">
+                <form accept-charset="utf-8">
+                <input type="text" id="comment_text_5ac4d5305a877f6e38c6a4e8__profile_feed_story" class="commentInput" style="height:20px; width:250px;" placeholder="Leave a comment...">
+                <input type="submit" onclick="venmo.story.postComment('5ac4d5305a877f6e38c6a4e8', 'profile_feed_story'); return false;" id="comment_submit_5ac4d5305a877f6e38c6a4e8__profile_feed_story" tabindex="-1" style="border: 0 none; height: 0; width: 0; padding: 0; margin: 0; overflow: hidden;">
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+                        
+                    </td> 
+                    <td class="align_top p_five_t align_right">
+                        </td>
+                </tr>
+            </tbody></table>
+        </div>
+    </div><div id="5ac3c27d5a877f6e380abff3__profile_feed_story" rel="2018-04-03T18:05:49Z" class="profile_feed_story gray_bottom_divider p_twenty_l p_twenty_r" story_id="5ac3c27d5a877f6e380abff3">
+        <div class="p_ten_t">
+            <table width="100%">
+                <tbody><tr>
+                    <td class="align_top p_ten_b" width="52px">
+                        <div class="relative">
+                                                            <a href="/aturkelson" title="Adam Turkelson" class="bold">
+                                    <img onerror="this.src='https://s3.amazonaws.com/venmo/no-image.gif';" class="sq48 pics_diag_tl" src="https://s3.amazonaws.com/venmo/no-image.gif" longdesc="https://s3.amazonaws.com/venmo/no-image.gif">
+                                </a>
+                                <a href="/aturkelson" title="Adam Turkelson">
+                                        <!--<span class="mask48"></span>-->
+                                </a>
+                            </div>
+                    </td>
+                    <td class="align_top p_ten_l p_ten_b">
+                        <div class="width350">
+                            <div class="m_five_t p_ten_r" data-story-class="profile_feed_story">
+                                                                    <a href="/aturkelson" data-track="feed-username" class="bold">Adam Turkelson</a>
+                                                                                                            paid 
+                                                                                                                                                            <a href="/slycecoffee" data-track="feed-username" class="bold">Nicole Harris</a>
+                                        </div>
+                            <div style="word-wrap:break-word">
+				☕
+			    </div>
+                        </div>
+                        <div id="comments_and_likes" class="width350">
+    <div class="p_five_t p_ten_b small">
+                <span id="like_unlike_link_5ac3c27d5a877f6e380abff3">
+            <a href="#" onclick="venmo.story.likeUnlikeStory('like','5ac3c27d5a877f6e380abff3','profile_feed_story'); return false;">Like</a>
+        </span>
+        <span> · </span>
+        <a href="/story/5ac3c27d5a877f6e380abff3" class="gray_link">April 3</a>
+        </div>
+    <div id="like_row_5ac3c27d5a877f6e380abff3">
+    
+    </div>
+    <div class="width350 light_gray_background" id="comment_table_5ac3c27d5a877f6e380abff3__profile_feed_story">
+        <div id="comment_form_5ac3c27d5a877f6e380abff3__profile_feed_story" class="clearfix p_five_f white_box light_gray_background">
+            <div class="align_top float_left p_five_t p_five_b sq24">
+                <img onerror="this.src='https://s3.amazonaws.com/venmo/no-image.gif';" class="sq24" src="https://venmopics.appspot.com/u/v1/m/cda01776-53e3-4510-b525-5f92170f1c07" longdesc="https://venmopics.appspot.com/u/v1/m/cda01776-53e3-4510-b525-5f92170f1c07">
+            </div>
+            <div class="float_left align_top p_five_t p_five_b p_seven_l p_ten_b">
+                <form accept-charset="utf-8">
+                <input type="text" id="comment_text_5ac3c27d5a877f6e380abff3__profile_feed_story" class="commentInput" style="height:20px; width:250px;" placeholder="Leave a comment...">
+                <input type="submit" onclick="venmo.story.postComment('5ac3c27d5a877f6e380abff3', 'profile_feed_story'); return false;" id="comment_submit_5ac3c27d5a877f6e380abff3__profile_feed_story" tabindex="-1" style="border: 0 none; height: 0; width: 0; padding: 0; margin: 0; overflow: hidden;">
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+                        
+                    </td> 
+                    <td class="align_top p_five_t align_right">
+                        </td>
+                </tr>
+            </tbody></table>
+        </div>
+    </div><div id="5ac273b45a877f6e3821cb05__profile_feed_story" rel="2018-04-02T18:17:23Z" class="profile_feed_story gray_bottom_divider p_twenty_l p_twenty_r" story_id="5ac273b45a877f6e3821cb05">
+        <div class="p_ten_t">
+            <table width="100%">
+                <tbody><tr>
+                    <td class="align_top p_ten_b" width="52px">
+                        <div class="relative">
+                                                            <a href="/aturkelson" title="Adam Turkelson" class="bold">
+                                    <img onerror="this.src='https://s3.amazonaws.com/venmo/no-image.gif';" class="sq48 pics_diag_tl" src="https://s3.amazonaws.com/venmo/no-image.gif" longdesc="https://s3.amazonaws.com/venmo/no-image.gif">
+                                </a>
+                                <a href="/aturkelson" title="Adam Turkelson">
+                                        <!--<span class="mask48"></span>-->
+                                </a>
+                            </div>
+                    </td>
+                    <td class="align_top p_ten_l p_ten_b">
+                        <div class="width350">
+                            <div class="m_five_t p_ten_r" data-story-class="profile_feed_story">
+                                                                    <a href="/aturkelson" data-track="feed-username" class="bold">Adam Turkelson</a>
+                                                                                                            paid 
+                                                                                                                                                            <a href="/slycecoffee" data-track="feed-username" class="bold">Nicole Harris</a>
+                                        </div>
+                            <div style="word-wrap:break-word">
+				☕
+			    </div>
+                        </div>
+                        <div id="comments_and_likes" class="width350">
+    <div class="p_five_t p_ten_b small">
+                <span id="like_unlike_link_5ac273b45a877f6e3821cb05">
+            <a href="#" onclick="venmo.story.likeUnlikeStory('like','5ac273b45a877f6e3821cb05','profile_feed_story'); return false;">Like</a>
+        </span>
+        <span> · </span>
+        <a href="/story/5ac273b45a877f6e3821cb05" class="gray_link">April 2</a>
+        </div>
+    <div id="like_row_5ac273b45a877f6e3821cb05">
+    
+    </div>
+    <div class="width350 light_gray_background" id="comment_table_5ac273b45a877f6e3821cb05__profile_feed_story">
+        <div id="comment_form_5ac273b45a877f6e3821cb05__profile_feed_story" class="clearfix p_five_f white_box light_gray_background">
+            <div class="align_top float_left p_five_t p_five_b sq24">
+                <img onerror="this.src='https://s3.amazonaws.com/venmo/no-image.gif';" class="sq24" src="https://venmopics.appspot.com/u/v1/m/cda01776-53e3-4510-b525-5f92170f1c07" longdesc="https://venmopics.appspot.com/u/v1/m/cda01776-53e3-4510-b525-5f92170f1c07">
+            </div>
+            <div class="float_left align_top p_five_t p_five_b p_seven_l p_ten_b">
+                <form accept-charset="utf-8">
+                <input type="text" id="comment_text_5ac273b45a877f6e3821cb05__profile_feed_story" class="commentInput" style="height:20px; width:250px;" placeholder="Leave a comment...">
+                <input type="submit" onclick="venmo.story.postComment('5ac273b45a877f6e3821cb05', 'profile_feed_story'); return false;" id="comment_submit_5ac273b45a877f6e3821cb05__profile_feed_story" tabindex="-1" style="border: 0 none; height: 0; width: 0; padding: 0; margin: 0; overflow: hidden;">
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+                        
+                    </td> 
+                    <td class="align_top p_five_t align_right">
+                        </td>
+                </tr>
+            </tbody></table>
+        </div>
+    </div><div id="5abd1fd95a877f6e38ab5aa5__profile_feed_story" rel="2018-03-29T17:18:17Z" class="profile_feed_story gray_bottom_divider p_twenty_l p_twenty_r" story_id="5abd1fd95a877f6e38ab5aa5">
+        <div class="p_ten_t">
+            <table width="100%">
+                <tbody><tr>
+                    <td class="align_top p_ten_b" width="52px">
+                        <div class="relative">
+                                                            <a href="/insanj" title="Julian Weiss" class="bold">
+                                    <img onerror="this.src='https://s3.amazonaws.com/venmo/no-image.gif';" class="sq48 pics_diag_tl" src="https://venmopics.appspot.com/u/v5/n/4573e51f-1287-482d-bfd8-9ae517c8c54a" longdesc="https://venmopics.appspot.com/u/v5/n/4573e51f-1287-482d-bfd8-9ae517c8c54a">
+                                </a>
+                                <a href="/insanj" title="Julian Weiss">
+                                        <!--<span class="mask48"></span>-->
+                                </a>
+                            </div>
+                    </td>
+                    <td class="align_top p_ten_l p_ten_b">
+                        <div class="width350">
+                            <div class="m_five_t p_ten_r" data-story-class="profile_feed_story">
+                                                                    <a href="/insanj" data-track="feed-username" class="bold">Julian Weiss</a>
+                                                                                                            paid 
+                                                                                                                                                            <a href="/slycecoffee" data-track="feed-username" class="bold">Nicole Harris</a>
+                                        </div>
+                            <div style="word-wrap:break-word">
+				we need moar ☕️
+			    </div>
+                        </div>
+                        <div id="comments_and_likes" class="width350">
+    <div class="p_five_t p_ten_b small">
+                <span id="like_unlike_link_5abd1fd95a877f6e38ab5aa5">
+            <a href="#" onclick="venmo.story.likeUnlikeStory('like','5abd1fd95a877f6e38ab5aa5','profile_feed_story'); return false;">Like</a>
+        </span>
+        <span> · </span>
+        <a href="/story/5abd1fd95a877f6e38ab5aa5" class="gray_link">March 29</a>
+        </div>
+    <div id="like_row_5abd1fd95a877f6e38ab5aa5">
+    
+    </div>
+    <div class="width350 light_gray_background" id="comment_table_5abd1fd95a877f6e38ab5aa5__profile_feed_story">
+                    	<div id="comment_105aa209-21ab-42a4-ba91-2bc702da3862__profile_feed_story" class="align_top clearfix light_gray_background white_box p_five_f">
+<div class="align_top float_left p_five_t p_five_b sq24">
+    <a href="/slycecoffee" title="Nicole Harris">
+        <img onerror="this.src='https://s3.amazonaws.com/venmo/no-image.gif';" class="sq24" src="https://venmopics.appspot.com/u/v1/m/81a21320-00dc-48da-8925-ee4482b8f3e0" longdesc="https://venmopics.appspot.com/u/v1/m/81a21320-00dc-48da-8925-ee4482b8f3e0">
+    </a>
+</div>
+<div class="align_top float_left p_five_t p_five_b p_seven_l width272i">
+            <a href="/slycecoffee" title="Nicole Harris">Nicole Harris</a>: 
+    you want espresso size? i ordered a 10 pack coming friday but it's the big ones <br>
+    <span class="gray small">March 29 </span>
+</div>
+</div>
+                    	<div id="comment_0e0a0b45-661a-4648-9084-8804f80c2d2c__profile_feed_story" class="align_top clearfix light_gray_background white_box p_five_f">
+<div class="align_top float_left p_five_t p_five_b sq24">
+    <a href="/insanj" title="Julian Weiss">
+        <img onerror="this.src='https://s3.amazonaws.com/venmo/no-image.gif';" class="sq24" src="https://venmopics.appspot.com/u/v5/n/4573e51f-1287-482d-bfd8-9ae517c8c54a" longdesc="https://venmopics.appspot.com/u/v5/n/4573e51f-1287-482d-bfd8-9ae517c8c54a">
+    </a>
+</div>
+<div class="align_top float_left p_five_t p_five_b p_seven_l width272i">
+            <a href="/insanj" title="Julian Weiss">Julian Weiss</a>: 
+    nahh we still have a lot of espresso! big ones all the way. thanks 😊 <br>
+    <span class="gray small">March 29 </span>
+</div>
+</div>
+        <div id="comment_form_5abd1fd95a877f6e38ab5aa5__profile_feed_story" class="clearfix p_five_f white_box light_gray_background">
+            <div class="align_top float_left p_five_t p_five_b sq24">
+                <img onerror="this.src='https://s3.amazonaws.com/venmo/no-image.gif';" class="sq24" src="https://venmopics.appspot.com/u/v1/m/cda01776-53e3-4510-b525-5f92170f1c07" longdesc="https://venmopics.appspot.com/u/v1/m/cda01776-53e3-4510-b525-5f92170f1c07">
+            </div>
+            <div class="float_left align_top p_five_t p_five_b p_seven_l p_ten_b">
+                <form accept-charset="utf-8">
+                <input type="text" id="comment_text_5abd1fd95a877f6e38ab5aa5__profile_feed_story" class="commentInput" style="height:20px; width:250px;" placeholder="Leave a comment...">
+                <input type="submit" onclick="venmo.story.postComment('5abd1fd95a877f6e38ab5aa5', 'profile_feed_story'); return false;" id="comment_submit_5abd1fd95a877f6e38ab5aa5__profile_feed_story" tabindex="-1" style="border: 0 none; height: 0; width: 0; padding: 0; margin: 0; overflow: hidden;">
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+                        
+                    </td> 
+                    <td class="align_top p_five_t align_right">
+                        </td>
+                </tr>
+            </tbody></table>
+        </div>
+    </div><div id="5ab544bc5a877f6e38802a5f__profile_feed_story" rel="2018-03-23T18:17:32Z" class="profile_feed_story gray_bottom_divider p_twenty_l p_twenty_r" story_id="5ab544bc5a877f6e38802a5f">
+        <div class="p_ten_t">
+            <table width="100%">
+                <tbody><tr>
+                    <td class="align_top p_ten_b" width="52px">
+                        <div class="relative">
+                                                            <a href="/sydfink" title="Sydney Fink" class="bold">
+                                    <img onerror="this.src='https://s3.amazonaws.com/venmo/no-image.gif';" class="sq48 pics_diag_tl" src="https://venmopics.appspot.com/u/v1/m/2f4741da-9deb-4e48-9718-1c2465a40305" longdesc="https://venmopics.appspot.com/u/v1/m/2f4741da-9deb-4e48-9718-1c2465a40305">
+                                </a>
+                                <a href="/sydfink" title="Sydney Fink">
+                                        <!--<span class="mask48"></span>-->
+                                </a>
+                            </div>
+                    </td>
+                    <td class="align_top p_ten_l p_ten_b">
+                        <div class="width350">
+                            <div class="m_five_t p_ten_r" data-story-class="profile_feed_story">
+                                                                    <a href="/sydfink" data-track="feed-username" class="bold">Sydney Fink</a>
+                                                                                                            paid 
+                                                                                                                                                            <a href="/slycecoffee" data-track="feed-username" class="bold">Nicole Harris</a>
+                                        </div>
+                            <div style="word-wrap:break-word">
+				☕️
+			    </div>
+                        </div>
+                        <div id="comments_and_likes" class="width350">
+    <div class="p_five_t p_ten_b small">
+                <span id="like_unlike_link_5ab544bc5a877f6e38802a5f">
+            <a href="#" onclick="venmo.story.likeUnlikeStory('like','5ab544bc5a877f6e38802a5f','profile_feed_story'); return false;">Like</a>
+        </span>
+        <span> · </span>
+        <a href="/story/5ab544bc5a877f6e38802a5f" class="gray_link">March 23</a>
+        </div>
+    <div id="like_row_5ab544bc5a877f6e38802a5f">
+    
+    </div>
+    <div class="width350 light_gray_background" id="comment_table_5ab544bc5a877f6e38802a5f__profile_feed_story">
+        <div id="comment_form_5ab544bc5a877f6e38802a5f__profile_feed_story" class="clearfix p_five_f white_box light_gray_background">
+            <div class="align_top float_left p_five_t p_five_b sq24">
+                <img onerror="this.src='https://s3.amazonaws.com/venmo/no-image.gif';" class="sq24" src="https://venmopics.appspot.com/u/v1/m/cda01776-53e3-4510-b525-5f92170f1c07" longdesc="https://venmopics.appspot.com/u/v1/m/cda01776-53e3-4510-b525-5f92170f1c07">
+            </div>
+            <div class="float_left align_top p_five_t p_five_b p_seven_l p_ten_b">
+                <form accept-charset="utf-8">
+                <input type="text" id="comment_text_5ab544bc5a877f6e38802a5f__profile_feed_story" class="commentInput" style="height:20px; width:250px;" placeholder="Leave a comment...">
+                <input type="submit" onclick="venmo.story.postComment('5ab544bc5a877f6e38802a5f', 'profile_feed_story'); return false;" id="comment_submit_5ab544bc5a877f6e38802a5f__profile_feed_story" tabindex="-1" style="border: 0 none; height: 0; width: 0; padding: 0; margin: 0; overflow: hidden;">
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+                        
+                    </td> 
+                    <td class="align_top p_five_t align_right">
+                        </td>
+                </tr>
+            </tbody></table>
+        </div>
+    </div><div id="5ab5071a5a877f6e38db51e3__profile_feed_story" rel="2018-03-23T13:54:34Z" class="profile_feed_story gray_bottom_divider p_twenty_l p_twenty_r" story_id="5ab5071a5a877f6e38db51e3">
+        <div class="p_ten_t">
+            <table width="100%">
+                <tbody><tr>
+                    <td class="align_top p_ten_b" width="52px">
+                        <div class="relative">
+                                                            <a href="/aturkelson" title="Adam Turkelson" class="bold">
+                                    <img onerror="this.src='https://s3.amazonaws.com/venmo/no-image.gif';" class="sq48 pics_diag_tl" src="https://s3.amazonaws.com/venmo/no-image.gif" longdesc="https://s3.amazonaws.com/venmo/no-image.gif">
+                                </a>
+                                <a href="/aturkelson" title="Adam Turkelson">
+                                        <!--<span class="mask48"></span>-->
+                                </a>
+                            </div>
+                    </td>
+                    <td class="align_top p_ten_l p_ten_b">
+                        <div class="width350">
+                            <div class="m_five_t p_ten_r" data-story-class="profile_feed_story">
+                                                                    <a href="/aturkelson" data-track="feed-username" class="bold">Adam Turkelson</a>
+                                                                                                            paid 
+                                                                                                                                                            <a href="/slycecoffee" data-track="feed-username" class="bold">Nicole Harris</a>
+                                        </div>
+                            <div style="word-wrap:break-word">
+				Coffee
+			    </div>
+                        </div>
+                        <div id="comments_and_likes" class="width350">
+    <div class="p_five_t p_ten_b small">
+                <span id="like_unlike_link_5ab5071a5a877f6e38db51e3">
+            <a href="#" onclick="venmo.story.likeUnlikeStory('like','5ab5071a5a877f6e38db51e3','profile_feed_story'); return false;">Like</a>
+        </span>
+        <span> · </span>
+        <a href="/story/5ab5071a5a877f6e38db51e3" class="gray_link">March 23</a>
+        </div>
+    <div id="like_row_5ab5071a5a877f6e38db51e3">
+    
+    </div>
+    <div class="width350 light_gray_background" id="comment_table_5ab5071a5a877f6e38db51e3__profile_feed_story">
+        <div id="comment_form_5ab5071a5a877f6e38db51e3__profile_feed_story" class="clearfix p_five_f white_box light_gray_background">
+            <div class="align_top float_left p_five_t p_five_b sq24">
+                <img onerror="this.src='https://s3.amazonaws.com/venmo/no-image.gif';" class="sq24" src="https://venmopics.appspot.com/u/v1/m/cda01776-53e3-4510-b525-5f92170f1c07" longdesc="https://venmopics.appspot.com/u/v1/m/cda01776-53e3-4510-b525-5f92170f1c07">
+            </div>
+            <div class="float_left align_top p_five_t p_five_b p_seven_l p_ten_b">
+                <form accept-charset="utf-8">
+                <input type="text" id="comment_text_5ab5071a5a877f6e38db51e3__profile_feed_story" class="commentInput" style="height:20px; width:250px;" placeholder="Leave a comment...">
+                <input type="submit" onclick="venmo.story.postComment('5ab5071a5a877f6e38db51e3', 'profile_feed_story'); return false;" id="comment_submit_5ab5071a5a877f6e38db51e3__profile_feed_story" tabindex="-1" style="border: 0 none; height: 0; width: 0; padding: 0; margin: 0; overflow: hidden;">
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+                        
+                    </td> 
+                    <td class="align_top p_five_t align_right">
+                        </td>
+                </tr>
+            </tbody></table>
+        </div>
+    </div><div id="5ab2aaa95a877f6e3899e08e__profile_feed_story" rel="2018-03-21T18:55:37Z" class="profile_feed_story gray_bottom_divider p_twenty_l p_twenty_r" story_id="5ab2aaa95a877f6e3899e08e">
+        <div class="p_ten_t">
+            <table width="100%">
+                <tbody><tr>
+                    <td class="align_top p_ten_b" width="52px">
+                        <div class="relative">
+                                                            <a href="/jessica-spitkovsky" title="jessica spitkovsky" class="bold">
+                                    <img onerror="this.src='https://s3.amazonaws.com/venmo/no-image.gif';" class="sq48 pics_diag_tl" src="https://venmopics.appspot.com/u/v3/n/2291632a-e2f9-4c0e-8b8d-1dfd5611abe6" longdesc="https://venmopics.appspot.com/u/v3/n/2291632a-e2f9-4c0e-8b8d-1dfd5611abe6">
+                                </a>
+                                <a href="/jessica-spitkovsky" title="jessica spitkovsky">
+                                        <!--<span class="mask48"></span>-->
+                                </a>
+                            </div>
+                    </td>
+                    <td class="align_top p_ten_l p_ten_b">
+                        <div class="width350">
+                            <div class="m_five_t p_ten_r" data-story-class="profile_feed_story">
+                                                                    <a href="/jessica-spitkovsky" data-track="feed-username" class="bold">jessica spitkovsky</a>
+                                                                                                            paid 
+                                                                                                                                                            <a href="/slycecoffee" data-track="feed-username" class="bold">Nicole Harris</a>
+                                        </div>
+                            <div style="word-wrap:break-word">
+				☃️
+			    </div>
+                        </div>
+                        <div id="comments_and_likes" class="width350">
+    <div class="p_five_t p_ten_b small">
+                <span id="like_unlike_link_5ab2aaa95a877f6e3899e08e">
+            <a href="#" onclick="venmo.story.likeUnlikeStory('like','5ab2aaa95a877f6e3899e08e','profile_feed_story'); return false;">Like</a>
+        </span>
+        <span> · </span>
+        <a href="/story/5ab2aaa95a877f6e3899e08e" class="gray_link">March 21</a>
+        </div>
+    <div id="like_row_5ab2aaa95a877f6e3899e08e">
+    
+    </div>
+    <div class="width350 light_gray_background" id="comment_table_5ab2aaa95a877f6e3899e08e__profile_feed_story">
+        <div id="comment_form_5ab2aaa95a877f6e3899e08e__profile_feed_story" class="clearfix p_five_f white_box light_gray_background">
+            <div class="align_top float_left p_five_t p_five_b sq24">
+                <img onerror="this.src='https://s3.amazonaws.com/venmo/no-image.gif';" class="sq24" src="https://venmopics.appspot.com/u/v1/m/cda01776-53e3-4510-b525-5f92170f1c07" longdesc="https://venmopics.appspot.com/u/v1/m/cda01776-53e3-4510-b525-5f92170f1c07">
+            </div>
+            <div class="float_left align_top p_five_t p_five_b p_seven_l p_ten_b">
+                <form accept-charset="utf-8">
+                <input type="text" id="comment_text_5ab2aaa95a877f6e3899e08e__profile_feed_story" class="commentInput" style="height:20px; width:250px;" placeholder="Leave a comment...">
+                <input type="submit" onclick="venmo.story.postComment('5ab2aaa95a877f6e3899e08e', 'profile_feed_story'); return false;" id="comment_submit_5ab2aaa95a877f6e3899e08e__profile_feed_story" tabindex="-1" style="border: 0 none; height: 0; width: 0; padding: 0; margin: 0; overflow: hidden;">
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+                        
+                    </td> 
+                    <td class="align_top p_five_t align_right">
+                        </td>
+                </tr>
+            </tbody></table>
+        </div>
+    </div><div id="5ab00fd05a877f6e38581225__profile_feed_story" rel="2018-03-19T19:30:24Z" class="profile_feed_story gray_bottom_divider p_twenty_l p_twenty_r" story_id="5ab00fd05a877f6e38581225">
+        <div class="p_ten_t">
+            <table width="100%">
+                <tbody><tr>
+                    <td class="align_top p_ten_b" width="52px">
+                        <div class="relative">
+                                                            <a href="/sydfink" title="Sydney Fink" class="bold">
+                                    <img onerror="this.src='https://s3.amazonaws.com/venmo/no-image.gif';" class="sq48 pics_diag_tl" src="https://venmopics.appspot.com/u/v1/m/2f4741da-9deb-4e48-9718-1c2465a40305" longdesc="https://venmopics.appspot.com/u/v1/m/2f4741da-9deb-4e48-9718-1c2465a40305">
+                                </a>
+                                <a href="/sydfink" title="Sydney Fink">
+                                        <!--<span class="mask48"></span>-->
+                                </a>
+                            </div>
+                    </td>
+                    <td class="align_top p_ten_l p_ten_b">
+                        <div class="width350">
+                            <div class="m_five_t p_ten_r" data-story-class="profile_feed_story">
+                                                                    <a href="/sydfink" data-track="feed-username" class="bold">Sydney Fink</a>
+                                                                                                            paid 
+                                                                                                                                                            <a href="/slycecoffee" data-track="feed-username" class="bold">Nicole Harris</a>
+                                        </div>
+                            <div style="word-wrap:break-word">
+				☕️
+			    </div>
+                        </div>
+                        <div id="comments_and_likes" class="width350">
+    <div class="p_five_t p_ten_b small">
+                <span id="like_unlike_link_5ab00fd05a877f6e38581225">
+            <a href="#" onclick="venmo.story.likeUnlikeStory('like','5ab00fd05a877f6e38581225','profile_feed_story'); return false;">Like</a>
+        </span>
+        <span> · </span>
+        <a href="/story/5ab00fd05a877f6e38581225" class="gray_link">March 19</a>
+        </div>
+    <div id="like_row_5ab00fd05a877f6e38581225">
+    
+    </div>
+    <div class="width350 light_gray_background" id="comment_table_5ab00fd05a877f6e38581225__profile_feed_story">
+        <div id="comment_form_5ab00fd05a877f6e38581225__profile_feed_story" class="clearfix p_five_f white_box light_gray_background">
+            <div class="align_top float_left p_five_t p_five_b sq24">
+                <img onerror="this.src='https://s3.amazonaws.com/venmo/no-image.gif';" class="sq24" src="https://venmopics.appspot.com/u/v1/m/cda01776-53e3-4510-b525-5f92170f1c07" longdesc="https://venmopics.appspot.com/u/v1/m/cda01776-53e3-4510-b525-5f92170f1c07">
+            </div>
+            <div class="float_left align_top p_five_t p_five_b p_seven_l p_ten_b">
+                <form accept-charset="utf-8">
+                <input type="text" id="comment_text_5ab00fd05a877f6e38581225__profile_feed_story" class="commentInput" style="height:20px; width:250px;" placeholder="Leave a comment...">
+                <input type="submit" onclick="venmo.story.postComment('5ab00fd05a877f6e38581225', 'profile_feed_story'); return false;" id="comment_submit_5ab00fd05a877f6e38581225__profile_feed_story" tabindex="-1" style="border: 0 none; height: 0; width: 0; padding: 0; margin: 0; overflow: hidden;">
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+                        
+                    </td> 
+                    <td class="align_top p_five_t align_right">
+                        </td>
+                </tr>
+            </tbody></table>
+        </div>
+    </div><div id="5ab009e95a877f6e38598d70__profile_feed_story" rel="2018-03-19T19:05:13Z" class="profile_feed_story gray_bottom_divider p_twenty_l p_twenty_r" story_id="5ab009e95a877f6e38598d70">
+        <div class="p_ten_t">
+            <table width="100%">
+                <tbody><tr>
+                    <td class="align_top p_ten_b" width="52px">
+                        <div class="relative">
+                                                            <a href="/jessica-spitkovsky" title="jessica spitkovsky" class="bold">
+                                    <img onerror="this.src='https://s3.amazonaws.com/venmo/no-image.gif';" class="sq48 pics_diag_tl" src="https://venmopics.appspot.com/u/v3/n/2291632a-e2f9-4c0e-8b8d-1dfd5611abe6" longdesc="https://venmopics.appspot.com/u/v3/n/2291632a-e2f9-4c0e-8b8d-1dfd5611abe6">
+                                </a>
+                                <a href="/jessica-spitkovsky" title="jessica spitkovsky">
+                                        <!--<span class="mask48"></span>-->
+                                </a>
+                            </div>
+                    </td>
+                    <td class="align_top p_ten_l p_ten_b">
+                        <div class="width350">
+                            <div class="m_five_t p_ten_r" data-story-class="profile_feed_story">
+                                                                    <a href="/jessica-spitkovsky" data-track="feed-username" class="bold">jessica spitkovsky</a>
+                                                                                                            paid 
+                                                                                                                                                            <a href="/slycecoffee" data-track="feed-username" class="bold">Nicole Harris</a>
+                                        </div>
+                            <div style="word-wrap:break-word">
+				☕☕☕
+			    </div>
+                        </div>
+                        <div id="comments_and_likes" class="width350">
+    <div class="p_five_t p_ten_b small">
+                <span id="like_unlike_link_5ab009e95a877f6e38598d70">
+            <a href="#" onclick="venmo.story.likeUnlikeStory('like','5ab009e95a877f6e38598d70','profile_feed_story'); return false;">Like</a>
+        </span>
+        <span> · </span>
+        <a href="/story/5ab009e95a877f6e38598d70" class="gray_link">March 19</a>
+        </div>
+    <div id="like_row_5ab009e95a877f6e38598d70">
+    
+    </div>
+    <div class="width350 light_gray_background" id="comment_table_5ab009e95a877f6e38598d70__profile_feed_story">
+        <div id="comment_form_5ab009e95a877f6e38598d70__profile_feed_story" class="clearfix p_five_f white_box light_gray_background">
+            <div class="align_top float_left p_five_t p_five_b sq24">
+                <img onerror="this.src='https://s3.amazonaws.com/venmo/no-image.gif';" class="sq24" src="https://venmopics.appspot.com/u/v1/m/cda01776-53e3-4510-b525-5f92170f1c07" longdesc="https://venmopics.appspot.com/u/v1/m/cda01776-53e3-4510-b525-5f92170f1c07">
+            </div>
+            <div class="float_left align_top p_five_t p_five_b p_seven_l p_ten_b">
+                <form accept-charset="utf-8">
+                <input type="text" id="comment_text_5ab009e95a877f6e38598d70__profile_feed_story" class="commentInput" style="height:20px; width:250px;" placeholder="Leave a comment...">
+                <input type="submit" onclick="venmo.story.postComment('5ab009e95a877f6e38598d70', 'profile_feed_story'); return false;" id="comment_submit_5ab009e95a877f6e38598d70__profile_feed_story" tabindex="-1" style="border: 0 none; height: 0; width: 0; padding: 0; margin: 0; overflow: hidden;">
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+                        
+                    </td> 
+                    <td class="align_top p_five_t align_right">
+                        </td>
+                </tr>
+            </tbody></table>
+        </div>
+    </div><div id="profile_feed_story_LAST" rel="do not delete"></div>
+            <div id="profile_feed_MORE_BUTTON" rel="profile_feed" class="MORE_BUTTON" onclick="venmo.feed.loadMoreStories('profile_feed'); return false;" style="">
+                <a href="#" class="moreButton">More</a>
+            </div>
+        </div>
+        <!-- BETWEEN FEED -->
+        <div class="m_ten_b white_background" id="between_feed_container" style="display:none;">
+            <div id="between_feed_no_stories" style="display:none;" class="p_twenty_f">
+                <p>You have not made any payments with Nicole.</p>
+            </div>
+            <div id="between_feed_story_LAST" rel="do not delete"></div>
+            <div id="between_feed_MORE_BUTTON" rel="between_feed" class="MORE_BUTTON" onclick="venmo.feed.loadMoreStories('between_feed'); return false;" style="display:none;">
+                <a href="#" class="moreButton">More</a>
+            </div>
+        </div>
+
+        <script>
+            venmo.noticed.trackFeedImpressions('#profile_feed_container', '.profile_feed_story', 'Profile Other User Feed');
+            venmo.noticed.trackFeedImpressions('#between_feed_container', '.between_feed_story', 'Profile Other User Between You');
+        </script>
+
+
+
+
+
+    
+    </div><!-- dyn_content -->
+    </div><!-- float_left -->
+    
+    <div class="float_right side_content_width">
+        
+            
+                <div id="inc_right_side" class=" p_twenty_b">
+    <div class="m_twenty_t white_background gray_box med_gray_box_top">
+        
+            <div class="sidebarChunk p_ten_f">
+                <div class="gray m_five_b bold sidebarTitle">
+                    ACTIONS
+                </div>
+                <div>
+                    <div>
+
+    <div class="gray small">
+        <div id="f_accept_33685735" style="display:none;">
+            <button class="m_five_b" onclick="return venmo.friends.add('33685735'); return false;">Accept Friend Request</button>
+        </div>
+
+        <div id="f_add_33685735" style="display:none; ">
+            <button class="m_five_b" onclick="return venmo.friends.add('33685735'); return false;">Add Friend</button>
+        </div>
+
+        <div id="f_await_33685735" style=" " class="m_five_b">
+            Awaiting Friend Acceptance
+        </div>
+
+        <div id="f_remove_33685735" style=" display:none; " class="m_five_b">
+            <a href="#" onclick="venmo.friends.remove(33685735, false);return false;">Remove as a friend</a>
+        </div>
+
+        <div id="f_block_33685735" style="" class="m_five_b">
+            <a href="#" onclick="venmo.friends.block(33685735);return false;">Block this user</a>
+        </div>
+
+        <div id="f_unblock_33685735" style="display:none;" class="m_five_b">
+            <a href="#" onclick="venmo.friends.unblock(33685735);return false;">Unblock this user</a>
+        </div>
+    </div>
+</div>
+
+
+                </div>
+            </div>
+            <div class="sidebarChunk p_ten_f">
+                <div class="gray m_five_b bold sidebarTitle">
+                    MUTUAL FRIENDS (0)
+                </div>
+                <div>
+                    
+                </div>
+                
+            </div>
+        
+        <div class="sidebarChunk p_ten_f">
+            <div class="gray m_five_b bold sidebarTitle">
+                Nicole's FRIENDS (1)
+            </div>
+            <div>
+                
+                    
+<span class="anchor" config="down" cardtype="profile" details="Julian Weiss (insanj)">
+<a href="/insanj" class="">
+    
+        <img src="https://venmopics.appspot.com/u/v5/f/4573e51f-1287-482d-bfd8-9ae517c8c54a" onerror="this.src='https://s3.amazonaws.com/venmo/no-image.gif';" longdesc="https://venmopics.appspot.com/u/v5/f/4573e51f-1287-482d-bfd8-9ae517c8c54a" class="sq35 p_five_b">
+    
+</a>
+</span>
+
+                
+            </div>
+            
+                
+            
+        </div>
+    </div>
+</div>
+
+            
+        
+        
+
+        
+    </div>
+    
+    <div class="clear"></div>
+    <div id="placeholder_to_maintain_width_of_container"></div>
+</div><!-- left_and_right -->
+
+
+</div><!-- v5_body_background --> 
+<div class="clear"></div>
+
+
+     
+
+<div class="pagefooter align_center m_twenty_b small ">
+  <div class="content900 ">
+    <div class="p_twenty_l p_twenty_r">
+      <div class="float_left width200 m_twenty_r p_twenty_t">
+        <ul>
+          <li class="bold gray m_five_b m_forty_r ">Venmo</li>
+          <li><a href="/info/product" class="">Product</a></li>
+          <li><a href="/info/security" class="">Security</a></li>
+          <li><a href="/info/fees">Fees &amp; FAQ</a></li>
+        </ul>
+      </div>
+      <div class="float_left width200 m_forty_r p_twenty_t">
+        <ul>
+          <li class="bold gray m_five_b">About</li>
+          <li><a href="/info/about">Team</a></li>
+          <li><a href="/info/jobs">Jobs</a></li>
+          <li><a href="/info/press">Press</a></li>
+        </ul>
+      </div>
+      <div class="float_left width200 m_forty_r p_twenty_t">
+        <ul>
+          <li class="bold gray m_five_b">Community</li>
+          <li><a href="http://blog.venmo.com/" target="blank">Blog</a></li>
+          <li><a href="https://www.facebook.com/venmo" target="_blank">Facebook</a></li>
+          <li><a href="https://www.twitter.com/venmo" target="_blank">Twitter</a></li>
+        </ul>
+      </div>
+      <div class="float_left width200 m_forty_r p_twenty_t">
+        <ul>
+          <li class="bold gray m_five_b">Support</li>
+          <li><a href="/info/legal">Legal</a></li>
+          <li><a href="/info/legal_us_privacy_policy" class="">Privacy</a></li>
+          <li><a href="https://help.venmo.com/hc/en-us" id="help-center">Help Center</a></li>
+          <li><a href="https://help.venmo.com/hc/en-us/requests/new" id="contact-us">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="float_right p_ten_t">
+      </div>
+
+      <div class="clear"></div>
+    </div>
+
+
+    <div style="border-top:1px dotted #bbb;" class="p_twenty_l p_twenty_r">
+      <div class="float_left">
+        <div class="p_ten_t">
+          <div class="light_gray m_five_b">Venmo is a service of PayPal, Inc., a licensed provider of money transfer services (NMLS ID: 910457). All money transmission is provided by PayPal, Inc. pursuant to <a href="/legal/us-disclosures/">PayPal, Inc.’s licenses</a>. © 2017 PayPal, Inc.</div>
+        </div>
+
+        <div class="p_twenty_t">
+        </div>
+      </div>
+      <div class="float_right p_ten_t">
+      </div>
+      <div class="clear"></div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<script type="text/javascript">
+  mixpanel.name_tag('julian weiss' + ' ( ' + '36730548' + ' )');
+
+  window.storyToggle = function(contentId, iconId) {
+    return function() {
+      var iconEl = document.getElementById(iconId);
+      var contentEl = document.getElementById(contentId);
+
+      iconEl.classList.toggle('active');
+      contentEl.classList.toggle('is-visible');
+    }
+  };
+window.showHelp = function(dialog_id) {
+    var helpDialogEl = document.getElementById(dialog_id);
+    if(helpDialogEl.style.display == "none") {
+        helpDialogEl.style.display = "block";
+    }
+    else if(helpDialogEl.style.display == "block") {
+        helpDialogEl.style.display = "none";
+    }
+};
+
+document.addEventListener('click', function(event) {
+    // tracking when a user clicks on username in feeds
+    var target = event.target;
+    var tagName = target.tagName.toLowerCase();
+    var track = target.dataset.track;
+    if ( tagName === 'a' && track && track === 'feed-username' ) {
+        var parent = target.parentElement;
+        var typeOfFeed = parent.dataset.storyClass;
+        var feedNameToMparticleEvent = {
+            friends_feed: venmo.mParticle.events.FEED_FRIENDS_MORE,
+            me_feed: venmo.mParticle.events.FEED_ME_MORE
+        };
+        var mParticleEvent = feedNameToMparticleEvent[typeOfFeed];
+
+        if (!mParticleEvent) {
+          //not an event we are tracking, bail
+          return;
+        }
+
+        event.preventDefault();
+        venmo.mParticle.track(feedNameToMparticleEvent[feed_name]);
+    }
+}, false);
+
+</script>
+
+
+
+
+
+<script type="text/javascript">
+
+  if (typeof(venmo)!="undefined") {
+      venmo.load.googleAnalytics = function() {
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-15492939-15', 'auto');
+          ga('send', 'pageview');
+      };
+  } else {
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-15492939-15', 'auto');
+        ga('send', 'pageview');
+  }
+</script>
+
+
+
+
+
+
+<script type="text/javascript">
+  goog.events.listen(window, 'load', function() {
+    var profilePageUser = window.location.pathname.slice(1);
+    var isOwnProfile = venmo.logged_in_user.username === profilePageUser;
+    var isFriendProfile = !!venmo.contacts_by_username[profilePageUser];
+    venmo.isOnAProfilePage = true;
+    venmo.mParticle.track(venmo.mParticle.events.PROFILE_PAGE_VIEW, {
+      'redirected_from_within_site': !!document.referrer,
+      'is_own_profile': isOwnProfile,
+      'is_friend_profile': isFriendProfile
+    });
+  });
+</script>
+<iframe width="1" id="braintreeDataFrame" height="1" frameborder="0" scrolling="no" src="https://assets.braintreegateway.com/data/logo.htm?m=600000&amp;s=57e2350b7eb9e84b7033001bd5ced5ff"><img src="https://assets.braintreegateway.com/data/logo.gif?m=600000&s=57e2350b7eb9e84b7033001bd5ced5ff" /></iframe><iframe src="about:blank" title="" style="width: 0px; height: 0px; border: 0px; position: absolute; z-index: -999;"></iframe><iframe src="about:blank" title="" style="width: 0px; height: 0px; border: 0px; position: absolute; z-index: -999;"></iframe></body>
