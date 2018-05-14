@@ -54,3 +54,26 @@ footer {
 	left: 0px;
 	padding: 5px;
 }
+
+#loading p {
+	margin-top: 50px;
+	text-align: center;
+	font-size: 25px;
+	font-variant: small-caps;
+	animation: crossfade 2s infinite;
+}
+
+@keyframes crossfade {
+	0% {
+		opacity: 0.5;
+	}
+
+	50% {
+		opacity: 1.0;
+	}
+
+	100% {
+		opacity: 0.5;
+	}
+}
+

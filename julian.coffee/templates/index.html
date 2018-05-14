@@ -8,16 +8,32 @@
 
 	<title>☕️</title>
 
+	<!--<link rel="stylesheet" href='../static/coffee.css'>
+	<link rel="stylesheet" href="../static/loading.css">-->
 	<link rel="stylesheet" href={{ url_for('static', filename = 'coffee.css') }}>
+	<link rel="stylesheet" href={{ url_for('static', filename = 'loading.css') }}>
 </head>
 
 <body>
 	<div id="patrons">
 		<h2>Slyce Nespresso Patrons</h2>
+
+		<div id="loading">
+		<!--https://codepen.io/ccromjongh/pen/yemQEQ-->
+		<div id="circle_container">
+			<div id="stars"></div>
+			<div id="load_wrapper">
+				<div id="sun"></div>
+				<div id="moon"></div>
+			</div>
+		</div>
+		<p>⏳ Loading...</p>
+		</div>
 	</div>
 
 	<footer>🦅 &copy; 2018 <a href="http://insanj.com">Julian Weiss</a></footer>
 
+	<script src={{ url_for('static', filename = 'loading.js') }}></script>
 	<script src={{ url_for('static', filename = 'jquery-3.3.1.min.js') }}></script>
 	<script src={{ url_for('static', filename = 'coffee_frontend.js') }}></script>
 	<script src={{ url_for('static', filename = 'coffee_backend.js') }}></script>
