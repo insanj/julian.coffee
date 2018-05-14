@@ -1,8 +1,5 @@
-![](../julian.coffee/static/coffee.png)
-### julian.coffee
-#### :coffee: python bot that crawls slyce nespresso patrons via venmo
+![](https://thumbs.gfycat.com/BlankUnkemptFoxterrier-size_restricted.gif)
 
-![](../julian.coffee/static/example.gif)
 [See higher quality preview](https://gfycat.com/gifs/detail/BlankUnkemptFoxterrier)
 
 ## Built with
