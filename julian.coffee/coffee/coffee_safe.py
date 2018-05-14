@@ -24,7 +24,7 @@ class CoffeeSafe:
 
 		venmoPath = os.path.join(safePath, venmoCredsFilename)
 		self.setupFromConfigFile(venmoPath)
-		self.cookie = CoffeeCookie(safePath, cookieFilename)
+		# self.cookie = CoffeeCookie(safePath, cookieFilename)
 
 	def setupFromConfigFile(self, safePath):
 		with open(safePath, 'rb') as csvfile:

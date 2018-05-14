@@ -15,7 +15,7 @@ class CoffeeHouse:
 		webBrowser = CoffeeBarista(self.browserPath)
 		loginAuth = CoffeeSafe(self.safePath)
 
-		waitTime = 2
+		waitTime = 3
 
 		webBrowser.navigateToWebpage(loginAuth.loginSite)
 		# webBrowser.setWebpageCookie(loginAuth.cookie)

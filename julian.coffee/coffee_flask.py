@@ -12,7 +12,7 @@ appPort = '5000'
 serverBrowserLocation = os.path.join(os.getcwd(), "coffee")
 serverBrowserLocation = os.path.join(serverBrowserLocation, "external")
 serverBrowserLocation = os.path.join(serverBrowserLocation, "chromedriver")
-print "serverBrowserLocation =" + str(serverBrowserLocation)
+# print "serverBrowserLocation =" + str(serverBrowserLocation)
 
 venmoAuthLocation = os.path.join(os.getcwd(), "coffee")
 venmoAuthLocation = os.path.join(venmoAuthLocation, "external")
