@@ -4,7 +4,9 @@
    <h4 align="center">python bot that crawls slyce nespresso patrons via venmo</h4>
 </p>
 
-<img src="julian.coffee/static/example.gif"  width=auto height=auto />
+<a href="https://gfycat.com/gifs/detail/BlankUnkemptFoxterrier">
+   <img src="julian.coffee/static/example.gif"  width=100% height=auto />
+</a>
 
 ## Built with
 
