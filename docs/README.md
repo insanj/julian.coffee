@@ -1,12 +1,8 @@
-<p align="center">
-   <img src="julian.coffee/static/coffee.png" width=75 height=75 />
-   <h3 align="center">julian.coffee</h3>
-   <h4 align="center">python bot that crawls slyce nespresso patrons via venmo</h4>
-</p>
+![](../julian.coffee/static/coffee.png)
+### julian.coffee
+#### python bot that crawls slyce nespresso patrons via venmo
 
-<a href="https://gfycat.com/gifs/detail/BlankUnkemptFoxterrier">
-   <img src="julian.coffee/static/example.gif"  width=100% height=auto />
-</a>
+[![](julian.coffee/static/example.gif)](https://gfycat.com/gifs/detail/BlankUnkemptFoxterrier)
 
 ## Built with
 
